@@ -1,7 +1,8 @@
 /datum/job/civilian
+	receives_standard_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/assistant)
 
-/datum/job/civilian/caterer
+/datum/job/civilian/chef
 	name = "Caterer"
 	alias_names = list("Chef", "Bartender", "Barman")
 	limit = 3
@@ -133,6 +134,7 @@
 	wiki_link = "https://wiki.ss13.co/Artificial_Intelligence"
 	email_group = MGD_SILICON
 	rounds_needed_to_play = ROUNDS_MIN_SECASS
+	receives_standard_gear = FALSE
 
 /datum/job/civilian/AI/special_setup(mob/living/carbon/human/M)
 	..()
@@ -157,6 +159,7 @@
 	show_in_id_comp = FALSE
 	wiki_link = "https://wiki.ss13.co/Cyborg"
 	email_group = MGD_SILICON
+	receives_standard_gear = FALSE
 
 /datum/job/civilian/cyborg/special_setup(mob/living/carbon/human/M)
 	..()
@@ -169,9 +172,6 @@
 
 ABSTRACT_TYPE(/datum/job/civilian/bartender)
 /datum/job/civilian/bartender
-
-ABSTRACT_TYPE(/datum/job/civilian/chef)
-/datum/job/civilian/chef
 
 ABSTRACT_TYPE(/datum/job/civilian/mail_courier)
 /datum/job/civilian/mail_courier

@@ -1,9 +1,10 @@
 /datum/job/security
-	slot_jump = list(/obj/item/clothing/under/rank/security)
+	receives_standard_gear = TRUE
+	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
 	slot_back = list(/obj/item/storage/backpack/security)
 
 /datum/job/security/security_officer
-	name = "Marine Guard"
+	name = "Marine Security Guard"
 	alias_names = list("Security Officer", "Security Assistant")
 	limit = 8
 	lower_limit = 5
@@ -16,8 +17,9 @@
 	access_string = "Security Officer"
 	can_roll_antag = FALSE
 	receives_implants = list(/obj/item/implant/health/security/anti_mindhack)
+	slot_head = list(/obj/item/clothing/head/UNberet)
 	slot_belt = list(/obj/item/device/pda2/security)
-	slot_suit = list(/obj/item/clothing/suit/armor/vest)
+	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
 	slot_ears = list(/obj/item/device/radio/headset/security)
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses/sechud)
 	slot_poc1 = list(/obj/item/storage/security_pouch)

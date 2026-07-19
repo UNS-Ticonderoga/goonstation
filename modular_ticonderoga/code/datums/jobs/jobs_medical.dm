@@ -1,3 +1,6 @@
+/datum/job/medical
+	receives_standard_gear = TRUE
+
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"
 	limit = 5

@@ -3160,6 +3160,7 @@
 #include "interface\skin.dmf"
 #include "maps\config\map.dm"
 #include "modular_ticonderoga\code\modular.dm"
+#include "modular_ticonderoga\code\datums\jobs\job_parent.dm"
 #include "modular_ticonderoga\code\datums\jobs\jobs_civilian.dm"
 #include "modular_ticonderoga\code\datums\jobs\jobs_command.dm"
 #include "modular_ticonderoga\code\datums\jobs\jobs_engineering.dm"
@@ -3171,6 +3172,9 @@
 #include "modular_ticonderoga\code\modules\rank\ranks.dm"
 #include "modular_ticonderoga\code\obj\decal\wayfinding_line.dm"
 #include "modular_ticonderoga\code\obj\item\card-un.dm"
+#include "modular_ticonderoga\code\obj\item\clothing\hats.dm"
+#include "modular_ticonderoga\code\obj\item\clothing\suits.dm"
+#include "modular_ticonderoga\code\obj\item\clothing\uniforms.dm"
 #include "modular_ticonderoga\code\turf\nornwalls-unsimulated.dm"
 // END_INCLUDE
 

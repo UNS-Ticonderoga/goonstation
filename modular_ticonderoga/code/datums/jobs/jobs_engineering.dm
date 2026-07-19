@@ -1,4 +1,5 @@
 /datum/job/engineering
+	receives_standard_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/overalls)
 	slot_back = list(/obj/item/storage/backpack/engineering)
 

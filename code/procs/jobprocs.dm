@@ -275,14 +275,8 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 
 // TICONDEROGA CHANGE
 	// UN staff all receive standard equipment.
-	if (JOB in job_controls.staple_jobs)
-		var/obj/item/clothing/shoes/swat/boots = new()
-		if (!H.equip_if_possible(boots, SLOT_SHOES))
-			H.stow_in_available(boots, FALSE)
-		// Placeholder for now.
-		var/obj/item/clothing/suit/lined_jacket/jacket = new()
-		if (!H.equip_if_possible(jacket, SLOT_WEAR_SUIT))
-			H.stow_in_available(jacket, FALSE)
+	if (JOB.receives_standard_gear)
+		give_standard_gear(H)
 
 // END TICONDEROGA CHANGE
 	//#ifdef APRIL_FOOLS

@@ -1,4 +1,5 @@
 /datum/job/command
+	receives_standard_gear = TRUE
 	slot_head = list()
 	slot_jump = list(/obj/item/clothing/under/suit/captain)
 
@@ -47,7 +48,7 @@
 	)
 
 /datum/job/command/head_of_security
-	name = "Marine Officer"
+	name = "Marine Commanding Officer"
 	rank_type = RANK_OFFICER_O3
 	alias_names = list("Head of Security")
 	limit = 1
