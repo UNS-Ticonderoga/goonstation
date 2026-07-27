@@ -9,7 +9,7 @@
 	items_in_backpack = list(/obj/item/camera_film/large)
 	special_spawn_location = LANDMARK_JOURNALIST_SPAWN
 
-/datum/job/special/journalist/special_setup(var/mob/living/carbon/human/M)
+/datum/job/special/journalist/special_setup(mob/living/carbon/human/M)
 	..()
 	if (!M)
 		return

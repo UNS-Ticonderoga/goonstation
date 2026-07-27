@@ -4,7 +4,7 @@
 	slot_back = list(/obj/item/storage/backpack/security)
 
 /datum/job/security/security_officer
-	name = "Marine Security Guard"
+	name = "Marine Guard"
 	alias_names = list("Security Officer", "Security Assistant")
 	limit = 8
 	lower_limit = 5

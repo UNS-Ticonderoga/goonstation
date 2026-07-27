@@ -1,6 +1,7 @@
 /datum/job/engineering
 	receives_standard_gear = TRUE
-	slot_jump = list(/obj/item/clothing/under/rank/overalls)
+	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
+	slot_suit = list(/obj/item/clothing/suit/hi_vis)
 	slot_back = list(/obj/item/storage/backpack/engineering)
 
 /datum/job/engineering/engineer
@@ -43,6 +44,7 @@
 	wages = PAY::TRADESMAN
 	trait_list = list("training_quartermaster", "training_miner")
 	access_string = "Quartermaster"
+	slot_suit = list()
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_belt = list(/obj/item/storage/belt/mining/prepared)
 	slot_ears = list(/obj/item/device/radio/headset/shipping)
