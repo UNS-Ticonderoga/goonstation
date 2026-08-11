@@ -64,7 +64,7 @@
 	items_in_backpack = list(/obj/item/device/flash)
 	wiki_link = "https://wiki.ss13.co/Head_of_Security"
 	rounds_needed_to_play = ROUNDS_MIN_HIGHSEC
-	slot_suit = list(/obj/item/clothing/suit/armor/vest)
+	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
 	slot_back = list(/obj/item/storage/backpack/security)
 	slot_belt = list(/obj/item/device/pda2/hos)
 	slot_poc1 = list(/obj/item/storage/security_pouch)
