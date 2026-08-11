@@ -2,6 +2,7 @@
 /obj/item/clothing/head/fancy/un
 	name = "United Nations Peacekeeper Corps Navy peaked cap"
 	desc = "This hat has an air of authority granted by centuries of human naval traditions. It is also derisively called the milkman's cap."
+	modularized = TRUE
 
 	// Placeholders.
 	icon_state = "hoscap"
@@ -35,6 +36,7 @@
 	hatcolour = "black"
 	item_state = "basecap_black"
 	icon_state = "basecap_black"
+	modularized = TRUE
 
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
 	wear_state = "basecap-un"
