@@ -222,10 +222,10 @@ ADMIN_INTERACT_PROCS(/mob/living/critter/small_animal/mouse, proc/glorp)
 		HH.can_hold_items = 0
 
 	attackby(obj/item/reagent_containers/food/food, mob/user)
-		if (!istype(food) && !istype(food, /obj/item/organ))
+		if (!isalive(src) || !istype(food) && !istype(food, /obj/item/organ))
 			return ..()
 		if (ON_COOLDOWN(src, "consider_food", 5 SECONDS))
-			return
+			return ..()
 		src.visible_message("[src] sniffs \the [food].")
 		var/list/possible_recipes = list()
 		for (var/datum/recipe/recipe in global.oven_recipes)
@@ -280,6 +280,7 @@ ADMIN_INTERACT_PROCS(/mob/living/critter/small_animal/mouse, proc/glorp)
 	player_can_spawn_with_pet = FALSE
 	has_genes = FALSE
 	shiny_chance = 0
+	can_juggle = TRUE
 
 	New()
 		..()
@@ -459,6 +460,7 @@ TYPEINFO(/mob/living/critter/small_animal/mouse/weak/mentor/admin)
 	player_can_spawn_with_pet = FALSE
 	say_language = LANGUAGE_ENGLISH
 	shiny_chance = 1365 //Odds with the shiny charm, because of how charming these guys are before they run you over with a truck!
+	can_juggle = TRUE
 
 	New()
 		. = ..()
