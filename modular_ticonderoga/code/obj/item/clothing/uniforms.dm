@@ -1,12 +1,12 @@
-/obj/item/clothing/under/rank/bridge_officer
-	name = "United Nations bridge officer uniform"
+/obj/item/clothing/under/rank/service_whites
+	name = "United Nations service whites"
 	desc = "Attract not the ire of those in the summer whites of the Corps."
 	modularized = TRUE
 
 	icon = 'modular_ticonderoga/icons/obj/clothing/item_js.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/worn_js.dmi'
-	icon_state = "service_whites-bridge"
-	wear_state = "service_whites-bridge"
+	icon_state = "service-whites"
+	wear_state = "service-whites"
 
 	inhand_image_icon = 'icons/mob/inhand/jumpsuits/hand_js_misc.dmi'
 	item_state = "collar_shirt-white"
@@ -18,8 +18,8 @@
 
 	icon = 'modular_ticonderoga/icons/obj/clothing/item_js.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/worn_js.dmi'
-	icon_state = "service_khakis"
-	wear_state = "service_khakis"
+	icon_state = "service-khakis"
+	wear_state = "service-khakis"
 
 	inhand_image_icon = 'icons/mob/inhand/jumpsuits/hand_js_misc.dmi'
 	item_state = "collar_shirt-khaki"
