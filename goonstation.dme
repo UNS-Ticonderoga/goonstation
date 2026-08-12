@@ -3218,6 +3218,7 @@
 #include "modular_ticonderoga\code\obj\item\clothing\hats.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\suits.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\uniforms.dm"
+#include "modular_ticonderoga\code\obj\item\storage\webbing.dm"
 #include "modular_ticonderoga\code\turf\nornwalls-unsimulated.dm"
 // END_INCLUDE
 
