@@ -3,12 +3,11 @@
 	desc = "A flak vest in bright United Nations blue. Gaudy!"
 	modularized = TRUE
 
-	// Placeholders.
-	icon_state = "armorvest"
-	item_state = "armorvest"
-
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_suit.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/worn_suit.dmi'
-	wear_state = "flak_vest"
+
+	icon_state = "flak_vest"
+	item_state = "flak_vest"
 
 /obj/item/clothing/suit/armor/vest/un/attack_self(mob/user)
 	return

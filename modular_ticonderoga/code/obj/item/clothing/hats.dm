@@ -4,12 +4,11 @@
 	desc = "This hat has an air of authority granted by centuries of human naval traditions. It is also derisively called the milkman's cap."
 	modularized = TRUE
 
-	// Placeholders.
-	icon_state = "hoscap"
-	item_state = "hoscap"
-
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
-	wear_state = "peaked_cap-un"
+
+	icon_state = "peaked_cap-un"
+	item_state = "peaked_cap-un"
 
 /obj/item/clothing/head/fancy/un/setupProperties()
 	..()
@@ -20,37 +19,29 @@
 	desc = "The beret of the vaunted United Nations Peacekeeper Corps. That is, when the Security Council gets their act together."
 	modularized = TRUE
 
-	// Placeholders.
-	icon_state = "ntberet"
-	item_state = "ntberet"
-
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
-	wear_state = "beret-un"
+
+	icon_state = "beret-un"
+	item_state = "beret-un"
 
 /obj/item/clothing/head/UNberet/setupProperties()
 	..()
 	setProperty("meleeprot_head", 3)
 
 /obj/item/clothing/head/basecap/un
-	// Placeholders.
-	hatcolour = "black"
-	item_state = "basecap_black"
-	icon_state = "basecap_black"
+	hatcolour = "un"
 	modularized = TRUE
 
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
-	wear_state = "basecap-un"
+
+	icon_state = "basecap_un"
+	item_state = "basecap_un"
 
 /obj/item/clothing/head/basecap/un/New()
 	..()
 	name = "United Nations Peacekeeper Corps Navy cap"
-
-/obj/item/clothing/head/basecap/un/attack_self(mob/user)
-	..()
-	if (src.hatflip)
-		src.wear_state = "basecapflip-un"
-	else
-		src.wear_state = "basecap-un"
 
 /obj/item/clothing/head/helmet/un
 	name = "United Nations Peacekeeper Corps helmet"
@@ -59,12 +50,11 @@
 	c_flags = COVERSEYES | BLOCKCHOKE
 	protective_temperature = 500 KELVIN
 
-	// Placeholders.
-	icon_state = "helmet-hos"
-	item_state = "helmet-hos"
-
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
-	wear_state = "helmet-un"
+
+	icon_state = "helmet-un"
+	item_state = "helmet-un"
 
 /obj/item/clothing/head/helmet/un/setupProperties()
 	..()
