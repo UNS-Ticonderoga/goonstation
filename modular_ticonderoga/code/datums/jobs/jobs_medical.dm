@@ -2,6 +2,10 @@
 	receives_standard_gear = TRUE
 	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
 
+/datum/job/medical/special_setup(mob/M, no_special_spawn)
+	..()
+	items_in_backpack |= list(/obj/item/clothing/under/rank/service_khakis)
+
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"
 	limit = 5
@@ -12,7 +16,6 @@
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_belt = list(/obj/item/storage/belt/medical/prepared)
 	slot_jump = list(/obj/item/clothing/under/scrub/blue)
-	slot_suit = list(/obj/item/clothing/suit/labcoat/medical)
 	slot_ears = list(/obj/item/device/radio/headset/medical)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_poc1 = list(/obj/item/device/pda2/medical)
@@ -28,7 +31,6 @@
 	slot_back = list(/obj/item/storage/backpack/genetics)
 	slot_belt = list(/obj/item/device/pda2/genetics)
 	slot_jump = list(/obj/item/clothing/under/scrub/teal)
-	slot_suit = list(/obj/item/clothing/suit/labcoat/genetics)
 	slot_ears = list(/obj/item/device/radio/headset/medical)
 	slot_poc1 = list(/obj/item/device/analyzer/genetic)
 	wiki_link = "https://wiki.ss13.co/Geneticist"
@@ -42,7 +44,6 @@
 	slot_back = list(/obj/item/storage/backpack/robotics)
 	slot_belt = list(/obj/item/storage/belt/roboticist/prepared)
 	slot_jump = list(/obj/item/clothing/under/scrub/maroon)
-	slot_suit = list(/obj/item/clothing/suit/labcoat/robotics)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_ears = list(/obj/item/device/radio/headset/medical)
@@ -78,7 +79,6 @@
 	slot_back = list(/obj/item/storage/backpack/pharmacist)
 	slot_belt = list(/obj/item/device/pda2/pharmacist)
 	slot_jump = list(/obj/item/clothing/under/scrub/orange)
-	slot_suit = list(/obj/item/clothing/suit/labcoat/pharmacist)
 	slot_ears = list(/obj/item/device/radio/headset/pharmacist)
 	slot_eyes = list(/obj/item/clothing/glasses/spectro)
 	items_in_backpack = list(
