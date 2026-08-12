@@ -24,6 +24,7 @@
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses/sechud)
 	slot_poc1 = list(/obj/item/storage/security_pouch)
 	slot_poc2 = list(/obj/item/requisition_token/security)
+	items_in_backpack = list(/obj/item/clothing/head/fancy/un/officer)
 	rounds_needed_to_play = ROUNDS_MIN_SECURITY
 	wiki_link = "https://wiki.ss13.co/Security_Officer"
 
@@ -37,6 +38,7 @@
 	invalid_antagonist_roles = list(ROLE_HEAD_REVOLUTIONARY, ROLE_GANG_LEADER, ROLE_GANG_MEMBER, ROLE_CONSPIRATOR)
 	allow_antag_fallthrough = FALSE
 	unique = TRUE
+	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
 	slot_poc1 = list(/obj/item/device/pda2/forensic)
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_suit = list(/obj/item/clothing/suit/det_suit)

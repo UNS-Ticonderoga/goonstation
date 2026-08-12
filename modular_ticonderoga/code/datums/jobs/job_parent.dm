@@ -2,22 +2,20 @@
 	var/receives_standard_gear = FALSE
 
 /proc/give_standard_gear(mob/living/carbon/human/target)
-	var/obj/item/clothing/shoes/swat/boots = new()
-
 	var/equipped_boots = FALSE
+	var/obj/item/clothing/shoes/swat/boots = new()
 	if (target.equip_if_possible(boots, SLOT_SHOES))
 		equipped_boots = TRUE
 
 	var/equipped_jacket = FALSE
-	// Placeholder for now.
-	var/obj/item/clothing/suit/lined_jacket/jacket = new()
+	var/obj/item/clothing/suit/field_jacket/jacket = new()
 	if (target.equip_if_possible(jacket, SLOT_WEAR_SUIT))
 		equipped_jacket = TRUE
 
 	if (equipped_boots && equipped_jacket)
 		return
 
-	var/obj/item/storage/box/starter/starter_box = locate(/obj/item/storage/box/starter) in target
+	var/obj/item/storage/box/starter/starter_box = locate(/obj/item/storage/box/starter) in (target.back?.contents | target.belt?.contents)
 
 	if (istype(starter_box, /obj/item/storage/box/starter))
 		if (!equipped_boots)

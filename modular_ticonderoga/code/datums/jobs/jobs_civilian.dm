@@ -57,7 +57,6 @@
 	items_in_backpack = list(
 		/obj/item/reagent_containers/glass/bucket,
 		/obj/item/lamp_manufacturer/organic,
-		/obj/item/clothing/shoes/swat,
 	)
 	wiki_link = "https://wiki.ss13.co/Janitor"
 
@@ -68,14 +67,14 @@
 	wages = PAY::UNTRAINED
 	trait_list = list("training_chaplain")
 	access_string = "Chaplain"
-	slot_head = list(/obj/item/clothing/head/fancy/un)
+	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
 	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
 	slot_belt = list(/obj/item/device/pda2/chaplain)
 	slot_ears = list(/obj/item/device/radio/headset/civilian/chaplain)
 	slot_lhan = list(/obj/item/bible/loaded)
 	wiki_link = "https://wiki.ss13.co/Chaplain"
 
-/datum/job/civilian/chaplain/special_setup(var/mob/living/carbon/human/M)
+/datum/job/civilian/chaplain/special_setup(mob/living/carbon/human/M)
 	..()
 	OTHER_START_TRACKING_CAT(M, TR_CAT_CHAPLAINS)
 

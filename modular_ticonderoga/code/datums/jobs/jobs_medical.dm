@@ -1,5 +1,6 @@
 /datum/job/medical
 	receives_standard_gear = TRUE
+	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
 
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"

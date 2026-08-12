@@ -1,6 +1,6 @@
 /datum/job/command
 	receives_standard_gear = TRUE
-	slot_head = list(/obj/item/clothing/head/fancy/un)
+	slot_head = list(/obj/item/clothing/head/fancy/un/bridge)
 	slot_jump = list(/obj/item/clothing/under/rank/service_whites)
 
 /datum/job/command/captain
