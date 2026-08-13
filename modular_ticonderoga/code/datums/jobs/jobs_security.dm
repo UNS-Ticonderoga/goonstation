@@ -38,6 +38,7 @@
 	allow_antag_fallthrough = FALSE
 	unique = TRUE
 	slot_head = list(/obj/item/clothing/head/det_hat)
+	slot_belt = list(/obj/item/storage/belt/shoulder_holster)
 	slot_poc1 = list(/obj/item/device/pda2/forensic)
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_suit = list(/obj/item/clothing/suit/det_suit)
