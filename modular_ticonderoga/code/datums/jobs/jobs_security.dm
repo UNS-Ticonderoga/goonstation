@@ -3,6 +3,10 @@
 	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
 	slot_back = list(/obj/item/storage/backpack/security)
 
+/datum/job/security/special_setup(mob/M, no_special_spawn)
+	. = ..()
+	items_in_backpack |= list(/obj/item/clothing/head/fancy/un/officer)
+
 /datum/job/security/security_officer
 	name = "Marine Guard"
 	alias_names = list("Security Officer", "Security Assistant")
@@ -24,7 +28,6 @@
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses/sechud)
 	slot_poc1 = list(/obj/item/storage/security_pouch)
 	slot_poc2 = list(/obj/item/requisition_token/security)
-	items_in_backpack = list(/obj/item/clothing/head/fancy/un/officer)
 	rounds_needed_to_play = ROUNDS_MIN_SECURITY
 	wiki_link = "https://wiki.ss13.co/Security_Officer"
 
