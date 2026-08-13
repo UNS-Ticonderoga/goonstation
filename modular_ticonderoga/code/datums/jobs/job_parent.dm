@@ -1,6 +1,8 @@
 /datum/job
 	var/receives_standard_gear = FALSE
 
+// TODO:
+// Rank-based distribution of uniforms for (non)commissioned officers instead of per-job overrides
 /proc/give_standard_gear(mob/living/carbon/human/target)
 	var/equipped_boots = FALSE
 	var/obj/item/clothing/shoes/swat/boots = new()
