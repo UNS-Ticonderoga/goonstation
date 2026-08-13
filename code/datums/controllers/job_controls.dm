@@ -5,7 +5,11 @@ var/datum/job_controller/job_controls
 	var/list/special_jobs = list()
 	var/list/hidden_jobs = list() // not visible to players, for admin stuff, like the respawn panel
 	var/list/datum/forced_assignment/forced_assignments = list()
-	var/allow_special_jobs = 1 // hopefully this doesn't break anything!!
+// TICONDEROGA CHANGE
+	var/allow_special_jobs = FALSE
+// TICONDEROGA CHANGE ORIGINAL
+	// var/allow_special_jobs = 1 // hopefully this doesn't break anything!!
+// TICONDEROGA CHANGE END
 	var/datum/job/created/job_creator = null
 	var/datum/job/priority_job = null
 
