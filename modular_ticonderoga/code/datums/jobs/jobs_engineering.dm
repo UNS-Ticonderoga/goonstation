@@ -17,7 +17,12 @@
 	slot_poc1 = list(/obj/item/device/pda2/engine)
 	slot_ears = list(/obj/item/device/radio/headset/engineer)
 	slot_head = list(/obj/item/clothing/head/helmet/hardhat)
-	items_in_backpack = list(/obj/item/paper/book/from_file/pocketguide/engineering, /obj/item/old_grenade/oxygen)
+	items_in_backpack = list(
+		/obj/item/clothing/under/rank/service_khakis,
+		/obj/item/clothing/head/fancy/un/officer,
+		/obj/item/paper/book/from_file/pocketguide/engineering,
+		/obj/item/old_grenade/oxygen,
+	)
 	wiki_link = "https://wiki.ss13.co/Engineer"
 
 /datum/job/engineering/technical_assistant
