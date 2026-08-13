@@ -1,5 +1,5 @@
 /datum/job/civilian
-	receives_standard_gear = TRUE
+	receives_un_gear = TRUE
 	slot_head = list(/obj/item/clothing/head/basecap/un)
 	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
 
@@ -135,7 +135,7 @@
 	wiki_link = "https://wiki.ss13.co/Artificial_Intelligence"
 	email_group = MGD_SILICON
 	rounds_needed_to_play = ROUNDS_MIN_SECASS
-	receives_standard_gear = FALSE
+	receives_un_gear = FALSE
 
 /datum/job/civilian/AI/special_setup(mob/living/carbon/human/M)
 	..()
@@ -160,7 +160,7 @@
 	show_in_id_comp = FALSE
 	wiki_link = "https://wiki.ss13.co/Cyborg"
 	email_group = MGD_SILICON
-	receives_standard_gear = FALSE
+	receives_un_gear = FALSE
 
 /datum/job/civilian/cyborg/special_setup(mob/living/carbon/human/M)
 	..()

@@ -1,5 +1,5 @@
 /datum/job/engineering
-	receives_standard_gear = TRUE
+	receives_un_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
 	slot_suit = list(/obj/item/clothing/suit/hi_vis)
 	slot_back = list(/obj/item/storage/backpack/engineering)
@@ -18,8 +18,6 @@
 	slot_ears = list(/obj/item/device/radio/headset/engineer)
 	slot_head = list(/obj/item/clothing/head/helmet/hardhat)
 	items_in_backpack = list(
-		/obj/item/clothing/under/rank/service_khakis,
-		/obj/item/clothing/head/fancy/un/officer,
 		/obj/item/paper/book/from_file/pocketguide/engineering,
 		/obj/item/old_grenade/oxygen,
 	)

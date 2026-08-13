@@ -275,8 +275,8 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 
 // TICONDEROGA CHANGE
 	// UN staff all receive standard equipment.
-	if (JOB.receives_standard_gear)
-		give_standard_gear(H)
+	if (JOB.receives_un_gear)
+		give_un_gear(JOB, H)
 
 // END TICONDEROGA CHANGE
 	//#ifdef APRIL_FOOLS

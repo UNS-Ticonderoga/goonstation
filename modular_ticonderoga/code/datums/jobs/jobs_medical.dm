@@ -1,13 +1,5 @@
 /datum/job/medical
-	receives_standard_gear = TRUE
-	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
-
-/datum/job/medical/special_setup(mob/M, no_special_spawn)
-	..()
-	items_in_backpack |= list(
-		/obj/item/clothing/under/rank/service_khakis,
-		/obj/item/clothing/head/fancy/un/officer,
-	)
+	receives_un_gear = TRUE
 
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"

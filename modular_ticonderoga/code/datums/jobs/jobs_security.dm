@@ -1,11 +1,7 @@
 /datum/job/security
-	receives_standard_gear = TRUE
+	receives_un_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
 	slot_back = list(/obj/item/storage/backpack/security)
-
-/datum/job/security/special_setup(mob/M, no_special_spawn)
-	. = ..()
-	items_in_backpack |= list(/obj/item/clothing/head/fancy/un/officer)
 
 /datum/job/security/security_officer
 	name = "Marine Guard"
@@ -41,7 +37,7 @@
 	invalid_antagonist_roles = list(ROLE_HEAD_REVOLUTIONARY, ROLE_GANG_LEADER, ROLE_GANG_MEMBER, ROLE_CONSPIRATOR)
 	allow_antag_fallthrough = FALSE
 	unique = TRUE
-	slot_head = list(/obj/item/clothing/head/fancy/un/officer)
+	slot_head = list(/obj/item/clothing/head/det_hat)
 	slot_poc1 = list(/obj/item/device/pda2/forensic)
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_suit = list(/obj/item/clothing/suit/det_suit)
