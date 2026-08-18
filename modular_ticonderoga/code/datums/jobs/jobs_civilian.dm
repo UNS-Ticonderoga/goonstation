@@ -91,6 +91,7 @@
 
 /datum/job/civilian/clown
 	name = "Morale Technician"
+	receives_un_gear = FALSE // A Clown? In the United Nations? Surely not.
 	rank_type = RANK_ENLISTED_E1
 	alias_names = list("Clown")
 	limit = 1
