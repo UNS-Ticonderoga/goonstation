@@ -1,6 +1,6 @@
 <!-- TICONDEROGA CHANGE -->
 # SET TARGET BASE REPOSITORY APPROPRIATELY! DO NOT ACCIDENTALLY PR THIS TO UPSTREAM!
-<!-- END TICONDEROGA CHANGE -->
+<!-- TICONDEROGA CHANGE END -->
 
 <!-- The text between the arrows are comments - they won't be visible on your PR. -->
 

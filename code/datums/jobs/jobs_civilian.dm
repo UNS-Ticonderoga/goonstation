@@ -94,7 +94,7 @@ ABSTRACT_TYPE(/datum/job/civilian)
 	name = "Chaplain"
 // TICONDEROGA CHANGE
 	rank_type = RANK_OFFICER_O1
-// END TICONDEROGA CHANGE
+// TICONDEROGA CHANGE END
 	limit = 1
 	wages = PAY::UNTRAINED
 	trait_list = list("training_chaplain")
