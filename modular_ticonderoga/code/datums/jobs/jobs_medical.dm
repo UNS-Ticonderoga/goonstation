@@ -14,8 +14,7 @@
 	slot_ears = list(/obj/item/device/radio/headset/medical)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_poc1 = list(/obj/item/device/pda2/medical)
-	slot_poc2 = list(/obj/item/paper/book/from_file/pocketguide/medical)
-	items_in_backpack = list(/obj/item/crowbar/blue)
+	slot_poc2 = list(/obj/item/crowbar/blue)
 	wiki_link = "https://wiki.ss13.co/Medical_Doctor"
 
 /datum/job/medical/geneticist
@@ -61,7 +60,6 @@
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_poc1 = list(/obj/item/device/pda2/medical)
-	slot_poc2 = list(/obj/item/paper/book/from_file/pocketguide/medical)
 	slot_jump = list(/obj/item/clothing/under/scrub)
 	wiki_link = "https://wiki.ss13.co/Medical_Assistant"
 

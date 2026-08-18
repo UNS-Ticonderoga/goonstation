@@ -18,7 +18,6 @@
 	slot_poc1 = list(/obj/item/cloth/towel/bar)
 	slot_poc2 = list(/obj/item/reagent_containers/food/drinks/cocktailshaker)
 	items_in_backpack = list(
-		/obj/item/paper/book/from_file/pocketguide/bartending,
 		/obj/item/kitchen/rollingpin,
 		/obj/item/kitchen/utensil/knife/cleaver,
 	)

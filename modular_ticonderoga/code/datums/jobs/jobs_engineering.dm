@@ -15,12 +15,9 @@
 	slot_lhan = list(/obj/item/storage/toolbox/mechanical/engineer_spawn)
 	slot_glov = list(/obj/item/clothing/gloves/yellow)
 	slot_poc1 = list(/obj/item/device/pda2/engine)
+	slot_poc2 = list(/obj/item/old_grenade/oxygen)
 	slot_ears = list(/obj/item/device/radio/headset/engineer)
 	slot_head = list(/obj/item/clothing/head/helmet/hardhat)
-	items_in_backpack = list(
-		/obj/item/paper/book/from_file/pocketguide/engineering,
-		/obj/item/old_grenade/oxygen,
-	)
 	wiki_link = "https://wiki.ss13.co/Engineer"
 
 /datum/job/engineering/technical_assistant
@@ -36,7 +33,6 @@
 	slot_glov = list(/obj/item/clothing/gloves/yellow)
 	slot_belt = list(/obj/item/storage/belt/utility/prepared)
 	slot_poc1 = list(/obj/item/device/pda2/engine)
-	slot_poc2 = list(/obj/item/paper/book/from_file/pocketguide/engineering)
 	slot_head = list(/obj/item/clothing/head/helmet/hardhat)
 	wiki_link = "https://wiki.ss13.co/Technical_Assistant"
 
@@ -52,11 +48,7 @@
 	slot_belt = list(/obj/item/storage/belt/mining/prepared)
 	slot_ears = list(/obj/item/device/radio/headset/shipping)
 	slot_poc1 = list(/obj/item/device/pda2/quartermaster)
-	items_in_backpack = list(
-		/obj/item/crowbar,
-		/obj/item/paper/book/from_file/pocketguide/quartermaster,
-		/obj/item/paper/book/from_file/pocketguide/mining,
-		)
+	slot_poc2 = list(/obj/item/crowbar)
 	wiki_link = "https://wiki.ss13.co/Quartermaster"
 	email_group = MGD_SUPPLY
 

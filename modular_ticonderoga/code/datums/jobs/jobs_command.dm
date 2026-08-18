@@ -85,10 +85,9 @@
 	slot_glov = list(/obj/item/clothing/gloves/yellow)
 	slot_eyes = list(/obj/item/clothing/glasses/toggleable/meson)
 	slot_ears = list(/obj/item/device/radio/headset/command/ce)
-	slot_poc1 = list(/obj/item/paper/book/from_file/pocketguide/engineering)
+	slot_poc1 = list(/obj/item/device/flash)
 	slot_poc2 = list(/obj/item/device/pda2/chiefengineer)
 	items_in_backpack = list(
-		/obj/item/device/flash,
 		/obj/item/rcd_ammo/medium,
 		/obj/item/clothing/head/helmet/hardhat/chief_engineer,
 	)
