@@ -27,7 +27,7 @@ FORBID_INCLUDE = [
     r'maps**/*.dm',
 # TICONDEROGA CHANGE
 	r'modular_ticonderoga/maps**/*.dm',
-# END TICONDEROGA CHANGE
+# TICONDEROGA CHANGE END
 
     # OpenDream pragma lint file
     r'tools/ci/od_lints.dm'

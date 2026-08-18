@@ -25,7 +25,7 @@
 #include "text.dm"					// text macros/helpers
 // TICONDEROGA CHANGE
 #include "_modular_ticonderoga\defines\rank.dm"
-// END TICONDEROGA CHANGE
+// TICONDEROGA CHANGE END
 #include "defines\abilities.dm"
 #include "defines\access.dm"
 #include "defines\actions.dm"

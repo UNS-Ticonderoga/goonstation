@@ -43,7 +43,7 @@ var/global/list/mapNames = list(
 	"DevTest" =				list("id" = "DEVTEST",		"settings" = "devtest",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 69),
 // TICONDEROGA CHANGE
 	"Ticonderoga" =			list("id" = "TICONDEROGA",	"settings" = "ticonderoga",		"playerPickable" = FALSE),
-// END TICONDEROGA CHANGE
+// TICONDEROGA CHANGE END
 )
 
 /obj/landmark/map

@@ -63,7 +63,7 @@ datum/mind
 
 // TICONDEROGA CHANGE
 	var/datum/rank/assigned_rank = null
-// END TICONDEROGA CHANGE
+// TICONDEROGA CHANGE END
 
 	New(mob/M)
 		..()

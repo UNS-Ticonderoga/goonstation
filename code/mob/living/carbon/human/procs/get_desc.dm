@@ -56,7 +56,7 @@
 		. +=  "<br>[SPAN_NOTICE("*---------*")]"
 		. +=  "<br>[SPAN_NOTICE("[Noun_s] rank is <B>[rank.name] ([rank.get_pay_grade()])</B>.")]"
 
-// END TICONDEROGA CHANGE
+// TICONDEROGA CHANGE END
 	. +=  "<br>[SPAN_NOTICE("*---------*")]"
 	var/datum/ailment_data/found = src.find_ailment_by_type(/datum/ailment/disability/memetic_madness)
 	if (!ignore_checks && found && !show_vague)
