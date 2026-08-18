@@ -1,6 +1,4 @@
 /obj/item/card/id
-	modularized = TRUE
-
 	/// Can this card hold a military rank?
 	var/allow_rank = FALSE
 	var/datum/rank/rank = null
@@ -9,6 +7,7 @@
 	desc = "A United Nations microchipped identification card that grants the wielder access to areas and equipment based on their access level."
 	icon = 'modular_ticonderoga/icons/obj/items/card.dmi'
 	allow_rank = TRUE
+	modularized = TRUE
 
 /obj/item/card/id/un/command
 	icon_state = "id_com"
