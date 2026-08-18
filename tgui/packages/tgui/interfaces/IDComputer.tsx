@@ -282,7 +282,7 @@ export const IDComputer = () => {
                                 )}
                               </LabeledList.Item>
                             )}
-                            {/* END TICONDEROGA CHANGE */}
+                            {/* TICONDEROGA CHANGE END */}
                           </LabeledList>
                         </Stack.Item>
                         <Stack.Item>
