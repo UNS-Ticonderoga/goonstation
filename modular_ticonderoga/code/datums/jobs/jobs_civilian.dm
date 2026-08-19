@@ -1,5 +1,6 @@
 /datum/job/civilian
 	receives_un_gear = TRUE
+	slot_back = list(/obj/item/storage/backpack/un)
 	slot_head = list(/obj/item/clothing/head/basecap/un)
 	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
 

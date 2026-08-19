@@ -2,7 +2,7 @@
 	receives_un_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
 	slot_suit = list(/obj/item/clothing/suit/hi_vis)
-	slot_back = list(/obj/item/storage/backpack/engineering)
+	slot_back = list(/obj/item/storage/backpack/engineering/un)
 
 /datum/job/engineering/engineer
 	name = "Engineer"

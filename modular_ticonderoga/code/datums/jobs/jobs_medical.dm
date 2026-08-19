@@ -7,7 +7,7 @@
 	wages = PAY::DOCTORATE
 	trait_list = list("training_medical")
 	access_string = "Medical Doctor"
-	slot_back = list(/obj/item/storage/backpack/medic)
+	slot_back = list(/obj/item/storage/backpack/medic/un)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_belt = list(/obj/item/storage/belt/medical/prepared)
 	slot_jump = list(/obj/item/clothing/under/scrub/blue)
@@ -23,7 +23,7 @@
 	wages = PAY::DOCTORATE
 	trait_list = list("training_medical")
 	access_string = "Roboticist"
-	slot_back = list(/obj/item/storage/backpack/robotics)
+	slot_back = list(/obj/item/storage/backpack/robotics/un)
 	slot_belt = list(/obj/item/storage/belt/roboticist/prepared)
 	slot_jump = list(/obj/item/clothing/under/scrub/maroon)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
@@ -42,7 +42,7 @@
 	trait_list = list("training_medical")
 	access_string = "Medical Doctor"
 	rounds_allowed_to_play = ROUNDS_MAX_MEDASS
-	slot_back = list(/obj/item/storage/backpack/medic)
+	slot_back = list(/obj/item/storage/backpack/medic/un)
 	slot_belt = list(/obj/item/storage/belt/medical/prepared)
 	slot_ears = list(/obj/item/device/radio/headset/medical)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
@@ -57,7 +57,7 @@
 	wages = PAY::DOCTORATE
 	limit = 3
 	access_string = "Pharmacist"
-	slot_back = list(/obj/item/storage/backpack/pharmacist)
+	slot_back = list(/obj/item/storage/backpack/pharmacist/un)
 	slot_belt = list(/obj/item/device/pda2/pharmacist)
 	slot_jump = list(/obj/item/clothing/under/scrub/orange)
 	slot_ears = list(/obj/item/device/radio/headset/pharmacist)

@@ -17,7 +17,7 @@
 	receives_implants = list(/obj/item/implant/health/security/anti_mindhack/command)
 	wiki_link = "https://wiki.ss13.co/Captain"
 	slot_belt = list(/obj/item/device/pda2/captain)
-	slot_back = list(/obj/item/storage/backpack)
+	slot_back = list(/obj/item/storage/backpack/un)
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses)
 	slot_ears = list(/obj/item/device/radio/headset/command/captain)
 	items_in_backpack = list(
@@ -37,7 +37,7 @@
 	allow_antag_fallthrough = FALSE
 	receives_miranda = TRUE
 	world_announce_priority = ANNOUNCE_ORDER_HOP
-	slot_back = list(/obj/item/storage/backpack)
+	slot_back = list(/obj/item/storage/backpack/un)
 	slot_belt = list(/obj/item/device/pda2/hop)
 	slot_ears = list(/obj/item/device/radio/headset/command/hop)
 	slot_poc1 = list(/obj/item/pocketwatch)
@@ -65,7 +65,7 @@
 	wiki_link = "https://wiki.ss13.co/Head_of_Security"
 	rounds_needed_to_play = ROUNDS_MIN_HIGHSEC
 	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
-	slot_back = list(/obj/item/storage/backpack/security)
+	slot_back = list(/obj/item/storage/backpack/security/un)
 	slot_belt = list(/obj/item/device/pda2/hos)
 	slot_poc1 = list(/obj/item/storage/security_pouch)
 	slot_poc2 = list(/obj/item/requisition_token/security)
@@ -80,7 +80,7 @@
 	trait_list = list("training_engineer")
 	access_string = "Chief Engineer"
 	wiki_link = "https://wiki.ss13.co/Chief_Engineer"
-	slot_back = list(/obj/item/storage/backpack/engineering)
+	slot_back = list(/obj/item/storage/backpack/engineering/un)
 	slot_belt = list(/obj/item/storage/belt/utility/prepared/ceshielded)
 	slot_glov = list(/obj/item/clothing/gloves/yellow)
 	slot_eyes = list(/obj/item/clothing/glasses/toggleable/meson)
@@ -101,7 +101,7 @@
 	trait_list = list("training_medical")
 	access_string = "Medical Director"
 	wiki_link = "https://wiki.ss13.co/Medical_Director"
-	slot_back = list(/obj/item/storage/backpack/medic)
+	slot_back = list(/obj/item/storage/backpack/medic/un)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_belt = list(/obj/item/storage/belt/medical/prepared)
 	slot_ears = list(/obj/item/device/radio/headset/command/md)
