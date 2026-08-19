@@ -1,14 +1,14 @@
-/datum/rank/officer/lcdr
+/datum/rank/officer/bridge/lcdr
 	name = RANK_OFFICER_O4
 	short_name = "LCDR"
 	order = 4
 
-/datum/rank/officer/lt
+/datum/rank/officer/bridge/lt
 	name = RANK_OFFICER_O3
 	short_name = "LT"
 	order = 3
 
-/datum/rank/officer/slt
+/datum/rank/officer/bridge/slt
 	name = RANK_OFFICER_O2
 	short_name = "SLT"
 	order = 2

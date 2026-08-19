@@ -2,6 +2,7 @@
 	receives_un_gear = TRUE
 	slot_head = list(/obj/item/clothing/head/fancy/un/bridge)
 	slot_jump = list(/obj/item/clothing/under/rank/service_whites)
+	slot_foot = list(/obj/item/clothing/shoes/swat)
 
 /datum/job/command/captain
 	name = "Commanding Officer"
