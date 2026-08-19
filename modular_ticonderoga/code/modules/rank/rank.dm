@@ -98,26 +98,3 @@ ABSTRACT_TYPE(/datum/rank)
 
 /datum/rank/proc/get_pay_grade()
 	return "[src.rank_type][src.order]"
-
-ABSTRACT_TYPE(/datum/rank/enlisted)
-/datum/rank/enlisted
-	rank_type = RANK_TYPE_ENLISTED
-	rank_items = list(
-		SLOT_HEAD = /obj/item/clothing/head/basecap/un,
-		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/shipboard_coveralls,
-	)
-
-ABSTRACT_TYPE(/datum/rank/officer)
-/datum/rank/officer
-	rank_type = RANK_TYPE_OFFICER
-	rank_items = list(
-		SLOT_HEAD = /obj/item/clothing/head/fancy/un/officer,
-		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_khakis,
-	)
-
-ABSTRACT_TYPE(/datum/rank/officer/bridge)
-/datum/rank/officer/bridge
-	rank_items = list(
-		SLOT_HEAD = /obj/item/clothing/head/fancy/un/bridge,
-		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_whites,
-	)
