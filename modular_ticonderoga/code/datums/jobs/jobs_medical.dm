@@ -17,18 +17,6 @@
 	slot_poc2 = list(/obj/item/crowbar/blue)
 	wiki_link = "https://wiki.ss13.co/Medical_Doctor"
 
-/datum/job/medical/geneticist
-	name = "Geneticist"
-	limit = 2
-	wages = PAY::DOCTORATE
-	access_string = "Geneticist"
-	slot_back = list(/obj/item/storage/backpack/genetics)
-	slot_belt = list(/obj/item/device/pda2/genetics)
-	slot_jump = list(/obj/item/clothing/under/scrub/teal)
-	slot_ears = list(/obj/item/device/radio/headset/medical)
-	slot_poc1 = list(/obj/item/device/analyzer/genetic)
-	wiki_link = "https://wiki.ss13.co/Geneticist"
-
 /datum/job/medical/roboticist
 	name = "Roboticist"
 	limit = 3
@@ -80,3 +68,6 @@
 		/obj/item/reagent_containers/injector_filler,
 	)
 	wiki_link = "https://wiki.ss13.co/Pharmacist"
+
+ABSTRACT_TYPE(/datum/job/medical/geneticist)
+/datum/job/medical/geneticist
