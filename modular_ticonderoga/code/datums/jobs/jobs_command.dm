@@ -21,9 +21,9 @@
 	slot_back = list(/obj/item/storage/backpack/un)
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses)
 	slot_ears = list(/obj/item/device/radio/headset/command/captain)
+	slot_poc1 = list(/obj/item/device/flash)
 	items_in_backpack = list(
-		/obj/item/storage/box/id_kit,
-		/obj/item/device/flash,
+		/obj/item/storage/box/id_kit/un,
 	)
 	rounds_needed_to_play = ROUNDS_MIN_CAPTAIN
 
@@ -42,9 +42,9 @@
 	slot_belt = list(/obj/item/device/pda2/hop)
 	slot_ears = list(/obj/item/device/radio/headset/command/hop)
 	slot_poc1 = list(/obj/item/pocketwatch)
+	slot_poc2 = list(/obj/item/device/flash)
 	items_in_backpack = list(
-		/obj/item/storage/box/id_kit,
-		/obj/item/device/flash,
+		/obj/item/storage/box/id_kit/un,
 		/obj/item/storage/box/accessimp_kit,
 	)
 
@@ -108,7 +108,7 @@
 	slot_ears = list(/obj/item/device/radio/headset/command/md)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_poc1 = list(/obj/item/device/pda2/medical_director)
-	items_in_backpack = list(/obj/item/device/flash)
+	slot_poc2 = list(/obj/item/device/flash)
 
 ABSTRACT_TYPE(/datum/job/command/research_director)
 /datum/job/command/research_director
