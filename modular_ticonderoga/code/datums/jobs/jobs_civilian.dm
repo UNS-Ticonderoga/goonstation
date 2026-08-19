@@ -35,11 +35,7 @@
 	slot_poc1 = list(/obj/item/device/pda2/botanist)
 	slot_poc2 = list(/obj/item/plantanalyzer)
 	slot_ears = list(/obj/item/device/radio/headset/civilian/hydroponics)
-	items_in_backpack = list(
-		/obj/item/device/camera_viewer/ranch,
-		/obj/item/paper/image/botany_guide,
-		/obj/item/paper/image/ranch_guide,
-	)
+	items_in_backpack = list(/obj/item/device/camera_viewer/ranch)
 	wiki_link = "https://wiki.ss13.co/Botanist"
 	faction = list(FACTION_BOTANY)
 
