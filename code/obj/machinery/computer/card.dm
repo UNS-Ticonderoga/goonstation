@@ -260,7 +260,7 @@
 
 		.["icons"] = list(
 // TICONDEROGA CHANGE
-			list(style = "none", name = "Plain", card_look = "id", icon = getCardBase64Img("id_basic")),
+			list(style = "none", name = "Plain", card_look = "id_basic", icon = getCardBase64Img("id_basic")),
 			list(style = "civilian", name = "Deck", card_look = "id_civ", icon = getCardBase64Img("id_civ")),
 			list(style = "engineering", name = "Engineering", card_look = "id_eng", icon = getCardBase64Img("id_eng")),
 			list(style = "medical", name = "Medical", card_look = "id_med", icon = getCardBase64Img("id_med")),
