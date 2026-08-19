@@ -322,11 +322,22 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 		unannounced_heads_of_staff += list(L)
 		SPAWN(1 SECOND)
 			announce_heads_of_staff()
-	boutput(src, "<B>You are the [JOB.name].</B>")
+// TICONDEROGA CHANGE
 	src.job = JOB.name
 	src.mind.assigned_role = JOB.name
-// TICONDEROGA CHANGE
+
 	src.mind.assign_rank(JOB)
+
+	var/suffix = ""
+	var/datum/rank/assigned_rank = src.mind.assigned_rank || null
+	if (istype(assigned_rank, /datum/rank))
+		suffix = ", \a ["\improper [assigned_rank.name]"] ([assigned_rank.get_pay_grade()]) within the United Nations Peacekeeper Corps Navy"
+
+	boutput(src, "<B>You are the [JOB.name][suffix].</B>")
+// TICONDEROGA CHANGE ORIGINAL
+	// boutput(src, "<B>You are the [JOB.name].</B>")
+	// src.job = JOB.name
+	// src.mind.assigned_role = JOB.name
 // TICONDEROGA CHANGE END
 
 	if (!joined_late)
