@@ -292,6 +292,9 @@ ABSTRACT_TYPE(/datum/job/special/random)
 	items_in_backpack = list(/obj/item/football,/obj/item/football,/obj/item/basketball,/obj/item/basketball)
 	// missing wiki link, parent fallback to https://wiki.ss13.co/Jobs#Gimmick_Jobs
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/special/random/journalist
 	name = "Journalist"
 	wages = PAY::UNTRAINED
@@ -317,6 +320,8 @@ ABSTRACT_TYPE(/datum/job/special/random)
 			B.storage.add_contents(new /obj/item/clipboard/with_pen(B))
 
 		return
+*/
+// TICONDEROGA CHANGE END
 
 /datum/job/special/random/beekeeper
 	name = "Apiculturist"

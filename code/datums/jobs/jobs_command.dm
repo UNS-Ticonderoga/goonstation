@@ -22,6 +22,9 @@ ABSTRACT_TYPE(/datum/job/command)
 		image.appearance_flags = PIXEL_SCALE | RESET_ALPHA | RESET_COLOR | RESET_TRANSFORM | KEEP_APART
 		get_image_group(CLIENT_IMAGE_GROUP_HEADS_OF_STAFF).add_image(image)
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/command/captain
 	name = "Captain"
 	limit = 1
@@ -34,12 +37,7 @@ ABSTRACT_TYPE(/datum/job/command)
 	receives_implants = list(/obj/item/implant/health/security/anti_mindhack/command)
 	wiki_link = "https://wiki.ss13.co/Captain"
 
-// TICONDEROGA CHANGE
-	rank_type = RANK_OFFICER_O4
-	slot_card = /obj/item/card/id/un/command
-// TICONDEROGA CHANGE ORIGINAL
-	// slot_card = /obj/item/card/id/gold
-// TICONDEROGA CHANGE END
+	slot_card = /obj/item/card/id/gold
 	slot_belt = list(/obj/item/device/pda2/captain)
 	slot_back = list(/obj/item/storage/backpack/captain)
 	slot_jump = list(/obj/item/clothing/under/rank/captain)
@@ -83,9 +81,6 @@ ABSTRACT_TYPE(/datum/job/command)
 
 /datum/job/command/head_of_personnel
 	name = "Head of Personnel"
-// TICONDEROGA CHANGE
-	rank_type = RANK_OFFICER_O3
-// TICONDEROGA CHANGE END
 	limit = 1
 	wages = PAY::IMPORTANT
 	access_string = "Head of Personnel"
@@ -107,9 +102,6 @@ ABSTRACT_TYPE(/datum/job/command)
 
 /datum/job/command/head_of_security
 	name = "Head of Security"
-// TICONDEROGA CHANGE
-	rank_type = RANK_OFFICER_O3
-// TICONDEROGA CHANGE END
 	limit = 1
 	wages = PAY::IMPORTANT
 	trait_list = list("training_drinker", "training_security")
@@ -159,9 +151,6 @@ ABSTRACT_TYPE(/datum/job/command)
 
 /datum/job/command/chief_engineer
 	name = "Chief Engineer"
-// TICONDEROGA CHANGE
-	rank_type = RANK_OFFICER_O2
-// TICONDEROGA CHANGE END
 	limit = 1
 	wages = PAY::IMPORTANT
 	trait_list = list("training_engineer")
@@ -225,9 +214,6 @@ ABSTRACT_TYPE(/datum/job/command)
 
 /datum/job/command/medical_director
 	name = "Medical Director"
-// TICONDEROGA CHANGE
-	rank_type = RANK_OFFICER_O3
-// TICONDEROGA CHANGE END
 	limit = 1
 	wages = PAY::IMPORTANT
 	trait_list = list("training_medical")
@@ -244,3 +230,6 @@ ABSTRACT_TYPE(/datum/job/command)
 	slot_eyes = list(/obj/item/clothing/glasses/healthgoggles/upgraded)
 	slot_poc1 = list(/obj/item/device/pda2/medical_director)
 	items_in_backpack = list(/obj/item/device/flash)
+
+*/
+// TICONDEROGA CHANGE END

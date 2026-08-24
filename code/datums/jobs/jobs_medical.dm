@@ -10,6 +10,9 @@ ABSTRACT_TYPE(/datum/job/medical)
 	job_category = JOB_MEDICAL
 	email_group = MGD_MEDICAL
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"
 	limit = 5
@@ -112,3 +115,5 @@ ABSTRACT_TYPE(/datum/job/medical)
 	slot_eyes = list(/obj/item/clothing/glasses/spectro)
 	items_in_backpack = list(/obj/item/storage/box/beakerbox, /obj/item/beaker_lid, /obj/item/reagent_containers/injector_filler)
 	wiki_link = "https://wiki.ss13.co/Pharmacist"
+*/
+// TICONDEROGA CHANGE END

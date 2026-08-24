@@ -219,15 +219,34 @@
 					command_jobs = null
 
 		.["standard_jobs"] = list(
+// TICONDEROGA CHANGE
+			list(name = "Command", color = /datum/job/command::ui_colour, jobs = command_jobs, style="command"),
+			list(name = "MARDET", color = /datum/job/security::ui_colour, jobs = security_jobs, style="security"),
+			list(name = "Medical", color = /datum/job/medical::ui_colour, jobs = medical_jobs, style="medical"),
+			list(name = "Engineering and Supply", color = /datum/job/engineering::ui_colour, jobs = engineering_jobs, style="engineering"),
+			list(name = "Deck", color = /datum/job/civilian::ui_colour, jobs = civilian_jobs, style="civilian"),
+// TICONDEROGA CHANGE ORIGINAL
+/*
 			list(name = "Command", color = /datum/job/command::ui_colour, jobs = command_jobs, style="command"),
 			list(name = "Security", color = /datum/job/security::ui_colour, jobs = security_jobs, style="security"),
 			list(name = "Research", color = /datum/job/research::ui_colour, jobs = research_jobs, style="research"),
 			list(name = "Medical", color = /datum/job/medical::ui_colour, jobs = medical_jobs, style="medical"),
 			list(name = "Engineering and Supply", color = /datum/job/engineering::ui_colour, jobs = engineering_jobs, style="engineering"),
 			list(name = "Civilian", color = /datum/job/civilian::ui_colour, jobs = civilian_jobs, style="civilian"),
+*/
+// TICONDEROGA CHANGE END
 		)
 
 		.["accesses_by_area"] = list(
+// TICONDEROGA CHANGE
+			list(name = "Command", color = /datum/job/command::ui_colour, accesses = command_access),
+			list(name = "MARDET", color = /datum/job/security::ui_colour, accesses = security_access),
+			list(name = "Medical", color = /datum/job/medical::ui_colour, accesses = medical_access),
+			list(name = "Engineering", color = /datum/job/engineering::ui_colour, accesses = engineering_access),
+			list(name = "Supply", color = /datum/job/engineering::ui_colour, accesses = supply_access),
+			list(name = "Deck", color = /datum/job/civilian::ui_colour, accesses = civilian_access),
+// TICONDEROGA CHANGE ORIGINAL
+/*
 			list(name = "Command", color = /datum/job/command::ui_colour, accesses = command_access),
 			list(name = "Security", color = /datum/job/security::ui_colour, accesses = security_access),
 			list(name = "Science", color = /datum/job/research::ui_colour, accesses = research_access),
@@ -235,9 +254,20 @@
 			list(name = "Engineering", color = /datum/job/engineering::ui_colour, accesses = engineering_access),
 			list(name = "Supply", color = /datum/job/engineering::ui_colour, accesses = supply_access),
 			list(name = "Civilian", color = /datum/job/civilian::ui_colour, accesses = civilian_access),
+*/
+// TICONDEROGA CHANGE END
 		)
 
 		.["icons"] = list(
+// TICONDEROGA CHANGE
+			list(style = "none", name = "Plain", card_look = "id_basic", icon = getCardBase64Img("id_basic")),
+			list(style = "civilian", name = "Deck", card_look = "id_civ", icon = getCardBase64Img("id_civ")),
+			list(style = "engineering", name = "Engineering", card_look = "id_eng", icon = getCardBase64Img("id_eng")),
+			list(style = "medical", name = "Medical", card_look = "id_med", icon = getCardBase64Img("id_med")),
+			list(style = "security", name = "MARDET", card_look = "id_sec", icon = getCardBase64Img("id_sec")),
+			list(style = "command", name = "Command", card_look = "id_com", icon = getCardBase64Img("id_com")),
+// TICONDEROGA CHANGE ORIGINAL
+/*
 			list(style = "none", name = "Plain", card_look = "id", icon = getCardBase64Img("id_basic")),
 			list(style = "civilian", name = "Civilian", card_look = "id_civ", icon = getCardBase64Img("id_civ")),
 			list(style = "engineering", name = "Engineering", card_look = "id_eng", icon = getCardBase64Img("id_eng")),
@@ -245,6 +275,8 @@
 			list(style = "medical", name = "Medical", card_look = "id_med", icon = getCardBase64Img("id_med")),
 			list(style = "security", name = "Security", card_look = "id_sec", icon = getCardBase64Img("id_sec")),
 			list(style = "command", name = "Command", card_look = "id_com", icon = getCardBase64Img("id_com")),
+*/
+// TICONDEROGA CHANGE END
 		)
 
 	ui_data(mob/user)
@@ -290,7 +322,11 @@
 
 		. = base64_preview_cache[icon_state]
 		if(isnull(.))
-			var/icon/result_icon = icon('icons/obj/items/card.dmi', icon_state)
+// TICONDEROGA CHANGE
+			var/icon/result_icon = icon('modular_ticonderoga/icons/obj/items/card.dmi', icon_state)
+// TICONDEROGA CHANGE ORIGINAL
+			// var/icon/result_icon = icon('icons/obj/items/card.dmi', icon_state)
+// TICONDEROGA CHANGE END
 
 			if(result_icon)
 				. = icon2base64(result_icon)

@@ -7,6 +7,9 @@ ABSTRACT_TYPE(/datum/job/research)
 	job_category = JOB_RESEARCH
 	email_group = MGD_RESEARCH
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/research/scientist
 	name = "Scientist"
 	limit = 5
@@ -40,3 +43,5 @@ ABSTRACT_TYPE(/datum/job/research)
 	slot_eyes = list(/obj/item/clothing/glasses/spectro)
 	slot_poc1 = list(/obj/item/pen = 50, /obj/item/pen/fancy = 25, /obj/item/pen/red = 5, /obj/item/pen/pencil = 20)
 	wiki_link = "https://wiki.ss13.co/Research_Assistant"
+*/
+// TICONDEROGA CHANGE END

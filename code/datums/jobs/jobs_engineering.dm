@@ -12,11 +12,11 @@ ABSTRACT_TYPE(/datum/job/engineering)
 	job_category = JOB_ENGINEERING
 	email_group = MGD_ENGINEER
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/engineering/engineer
 	name = "Engineer"
-// TICONDEROGA CHANGE
-	rank_type = RANK_ENLISTED_NCO
-// TICONDEROGA CHANGE END
 	limit = 8
 	wages = PAY::TRADESMAN
 	trait_list = list("training_engineer")
@@ -126,3 +126,5 @@ ABSTRACT_TYPE(/datum/job/engineering)
 	#endif
 	wiki_link = "https://wiki.ss13.co/Miner"
 	email_group = MGD_SUPPLY
+*/
+// TICONDEROGA CHANGE END

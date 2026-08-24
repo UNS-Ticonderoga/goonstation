@@ -13,6 +13,9 @@ ABSTRACT_TYPE(/datum/job/security)
 	job_category = JOB_SECURITY
 	email_group = MGD_SECURITY
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 /datum/job/security/security_officer
 	name = "Security Officer"
 	limit = 5
@@ -110,3 +113,5 @@ ABSTRACT_TYPE(/datum/job/security)
 
 		if (M.traitHolder && !M.traitHolder.hasTrait("smoker"))
 			items_in_backpack += list(/obj/item/device/light/zippo) //Smokers start with a trinket version
+*/
+// TICONDEROGA CHANGE END

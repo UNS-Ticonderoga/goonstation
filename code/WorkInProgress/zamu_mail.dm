@@ -411,6 +411,9 @@ var/global/mail_types_by_job = list(
 		/obj/item/clothing/head/helmet/camera/security = 2,
 		),
 
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+/*
 	/datum/job/security/security_officer/assistant = list(
 		/obj/item/reagent_containers/food/drinks/coffee = 5,
 		/obj/item/reagent_containers/food/snacks/donut/custom/random = 5,
@@ -422,6 +425,8 @@ var/global/mail_types_by_job = list(
 		/obj/item/device/prisoner_scanner = 2,
 		/obj/item/clothing/head/helmet/camera/security = 2,
 		),
+*/
+// TICONDEROGA CHANGE
 
 	/datum/job/security/detective = list(
 		/obj/item/device/detective_scanner = 4,

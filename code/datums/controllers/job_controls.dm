@@ -5,7 +5,11 @@ var/datum/job_controller/job_controls
 	var/list/special_jobs = list()
 	var/list/hidden_jobs = list() // not visible to players, for admin stuff, like the respawn panel
 	var/list/datum/forced_assignment/forced_assignments = list()
-	var/allow_special_jobs = 1 // hopefully this doesn't break anything!!
+// TICONDEROGA CHANGE
+	var/allow_special_jobs = FALSE
+// TICONDEROGA CHANGE ORIGINAL
+	// var/allow_special_jobs = 1 // hopefully this doesn't break anything!!
+// TICONDEROGA CHANGE END
 	var/datum/job/created/job_creator = null
 	var/datum/job/priority_job = null
 
@@ -14,6 +18,22 @@ var/datum/job_controller/job_controls
 
 	New()
 		..()
+// TICONDEROGA CHANGE
+		for (var/A in concrete_typesof(/datum/job/command))
+			src.staple_jobs += new A(src)
+		for (var/A in concrete_typesof(/datum/job/security))
+			src.staple_jobs += new A(src)
+		for (var/A in concrete_typesof(/datum/job/medical))
+			src.staple_jobs += new A(src)
+		for (var/A in concrete_typesof(/datum/job/engineering))
+			src.staple_jobs += new A(src)
+		for (var/A in concrete_typesof(/datum/job/civilian))
+			src.staple_jobs += new A(src)
+		for (var/A in concrete_typesof(/datum/job/special))
+			src.special_jobs += new A(src)
+		job_creator = new /datum/job/created(src)
+// TICONDEROGA CHANGE ORIGINAL
+/*
 		if (world.load_intra_round_value("solarium_complete") == 1 || derelict_mode || global.master_mode == "disaster")
 			src.staple_jobs = list(new /datum/job/command/captain/derelict {limit = 1;name = "NT-SO Commander";} (),
 			new /datum/job/command/head_of_security/derelict {limit = 1; name = "NT-SO Special Operative";} (),
@@ -43,6 +63,8 @@ var/datum/job_controller/job_controls
 				var/datum/job/not_daily_job = new variety_job_path(src)
 				not_daily_job.limit = 0
 				src.special_jobs += not_daily_job
+*/
+// TICONDEROGA CHANGE END
 
 		for (var/datum/job/J in src.staple_jobs)
 			// Cull any of those nasty null jobs from the category heads

@@ -35,6 +35,15 @@ var/global/totally_random_jobs = FALSE
 
 	return candidates
 
+// TICONDEROGA CHANGE
+#define ASSIGN_STAFF_LISTS(JOB, player) if (istype(JOB, /datum/job/engineering/engineer))\
+	{engineering_staff += player}\
+else if (istype(JOB, /datum/job/medical/medical_doctor))\
+	{medical_staff += player}\
+else if (istype(JOB, /datum/job/security/security_officer))\
+	{security_officers += player}
+// TICONDEROGA CHANGE ORIGINAL
+/*
 #define ASSIGN_STAFF_LISTS(JOB, player) if (istype(JOB, /datum/job/engineering/engineer))\
 	{engineering_staff += player}\
 else if (istype(JOB, /datum/job/research/scientist))\
@@ -43,6 +52,8 @@ else if (istype(JOB, /datum/job/medical/medical_doctor))\
 	{medical_staff += player}\
 else if (istype(JOB, /datum/job/security/security_officer))\
 	{security_officers += player}
+*/
+// TICONDEROGA CHANGE END
 
 /proc/DivideOccupations()
 	set background = 1
@@ -81,7 +92,10 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 
 	var/list/medical_staff = list()
 	var/list/engineering_staff = list()
-	var/list/research_staff = list()
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+	// var/list/research_staff = list()
+// TICONDEROGA CHANGE END
 	var/list/security_officers = list()
 
 
@@ -174,8 +188,11 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 			var/list/picks
 			if (istype(command_job, /datum/job/command/chief_engineer))
 				picks = FindPromotionCandidates(engineering_staff, command_job)
-			else if (istype(command_job, /datum/job/command/research_director))
-				picks = FindPromotionCandidates(research_staff, command_job)
+// TICONDEROGA CHANGE
+// TICONDEROGA CHANGE ORIGINAL
+			// else if (istype(command_job, /datum/job/command/research_director))
+			// 	picks = FindPromotionCandidates(research_staff, command_job)
+// TICONDEROGA CHANGE END
 			else if (istype(command_job, /datum/job/command/medical_director))
 				picks = FindPromotionCandidates(medical_staff, command_job)
 			else if (istype(command_job, /datum/job/command/head_of_security) && inital_ready > 10)
@@ -260,6 +277,12 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 	// Right hand
 	equip_job_item_slot(JOB.slot_rhan, H, SLOT_R_HAND)
 
+// TICONDEROGA CHANGE
+	// UN staff all receive standard equipment.
+	if (JOB.receives_un_gear)
+		give_un_gear(JOB, H)
+
+// END TICONDEROGA CHANGE
 	//#ifdef APRIL_FOOLS
 	//H.back?.setMaterial(getMaterial("jean"))
 	//H.gloves?.setMaterial(getMaterial("jean"))
@@ -299,11 +322,22 @@ else if (istype(JOB, /datum/job/security/security_officer))\
 		unannounced_heads_of_staff += list(L)
 		SPAWN(1 SECOND)
 			announce_heads_of_staff()
-	boutput(src, "<B>You are the [JOB.name].</B>")
+// TICONDEROGA CHANGE
 	src.job = JOB.name
 	src.mind.assigned_role = JOB.name
-// TICONDEROGA CHANGE
+
 	src.mind.assign_rank(JOB)
+
+	var/suffix = ""
+	var/datum/rank/assigned_rank = src.mind.assigned_rank || null
+	if (istype(assigned_rank, /datum/rank))
+		suffix = ", \a ["\improper [assigned_rank.name]"] ([assigned_rank.get_pay_grade()]) within the United Nations Peacekeeper Corps Navy"
+
+	boutput(src, "<B>You are the [JOB.name][suffix].</B>")
+// TICONDEROGA CHANGE ORIGINAL
+	// boutput(src, "<B>You are the [JOB.name].</B>")
+	// src.job = JOB.name
+	// src.mind.assigned_role = JOB.name
 // TICONDEROGA CHANGE END
 
 	if (!joined_late)

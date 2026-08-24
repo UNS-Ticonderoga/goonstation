@@ -18,6 +18,24 @@ var/global/list/un_ranks = list()
 		return (rank_b.order - rank_a.order)
 	return rank_b.rank_type == RANK_TYPE_OFFICER ? 1 : -1
 
+/// Returns `TRUE` for NCOs and Commissioned Officers. Used for equipment distribution.
+/proc/is_officer(mob/living/carbon/human/target)
+	. = FALSE
+
+	if (!ishuman(target))
+		return
+	if (!ismind(target.mind))
+		return
+	if (!target.mind.assigned_rank)
+		return
+
+	var/datum/rank/target_rank = target.mind.assigned_rank
+
+	if (target_rank.rank_type == RANK_TYPE_OFFICER)
+		return TRUE
+	if (target_rank.name in RANK_ENLISTED_NCO)
+		return TRUE
+
 /datum/mind/proc/assign_rank(datum/job/job)
 	var/rank_name = ""
 
@@ -75,14 +93,8 @@ ABSTRACT_TYPE(/datum/rank)
 	var/short_name = "S3C"
 	var/rank_type = RANK_TYPE_ENLISTED
 	var/order = 1
+	/// Items to distribute to all rank-holders' emergency boxes on spawning.
+	var/list/rank_items = list()
 
 /datum/rank/proc/get_pay_grade()
 	return "[src.rank_type][src.order]"
-
-ABSTRACT_TYPE(/datum/rank/enlisted)
-/datum/rank/enlisted
-	rank_type = RANK_TYPE_ENLISTED
-
-ABSTRACT_TYPE(/datum/rank/officer)
-/datum/rank/officer
-	rank_type = RANK_TYPE_OFFICER

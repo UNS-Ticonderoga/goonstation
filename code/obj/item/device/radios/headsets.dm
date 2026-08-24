@@ -352,8 +352,15 @@
 	icon_tooltip = "Scientist"
 
 /obj/item/device/radio/headset/civilian
+// TICONDEROGA CHANGE
+	name = "deck department headset"
+	desc = "These headsets are used by the deck department staff, who are employed to keep the station clean, fed, and productive. As if."
+// TICONDEROGA CHANGE ORIGINAL
+/*
 	name = "civilian headset"
 	desc = "These headsets are used by the civilian staff, who are employed to keep the station clean, fed, and productive. As if."
+*/
+// TICONDEROGA CHANGE END
 	icon_state = "civ headset"
 	wear_state = "civ headset" //So the unique ones keep the civilian worn icon
 	secure_frequencies = list("c" = RADIO::FREQ::CIVILIAN)
