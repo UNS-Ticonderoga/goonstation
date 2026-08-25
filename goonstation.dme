@@ -3212,6 +3212,7 @@
 #include "modular_ticonderoga\code\datums\jobs\jobs_science.dm"
 #include "modular_ticonderoga\code\datums\jobs\jobs_security.dm"
 #include "modular_ticonderoga\code\datums\jobs\jobs_special.dm"
+#include "modular_ticonderoga\code\modules\cooking\food_and_drink\rations.dm"
 #include "modular_ticonderoga\code\modules\rank\rank.dm"
 #include "modular_ticonderoga\code\modules\rank\ranks.dm"
 #include "modular_ticonderoga\code\obj\decal\wayfinding_line.dm"
