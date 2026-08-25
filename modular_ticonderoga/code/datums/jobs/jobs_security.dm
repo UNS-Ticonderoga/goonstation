@@ -44,6 +44,7 @@
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_suit = list(/obj/item/clothing/suit/det_suit)
 	slot_ears = list(/obj/item/device/radio/headset/detective)
+	slot_back = list(/obj/item/storage/backpack/un)
 	items_in_backpack = list(
 		/obj/item/clothing/glasses/vr,
 		/obj/item/storage/box/detectivegun,
