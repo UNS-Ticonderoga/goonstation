@@ -1,8 +1,25 @@
 /obj/item/storage/box/starter/un
+	name = "\improper PCN survival kit"
+	desc = "A UN Peacekeeper Corps Navy canvas bag containing survival supplies."
+	modularized = TRUE
+
+	// icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
+	// icon_state = "box-survival"
+
+	// Placeholder.
+	icon_state = "lunchbox_brown"
+
+	check_wclass = STORAGE_CHECK_W_CLASS_INCLUDE
 	spawn_contents = list(
 		/obj/item/clothing/mask/gas/un,
 		/obj/item/tank/pocket/oxygen,
 		/obj/item/storage/box/un_ration,
+		/obj/item/cigpacket,
+		/obj/item/roadflare,
+		/obj/item/matchbook,
+	)
+	can_hold = list(
+		/obj/item/clothing/mask/gas/un,
 	)
 
 /obj/item/storage/box/starter/un/make_my_stuff(onlyMaskAndOxygen)
