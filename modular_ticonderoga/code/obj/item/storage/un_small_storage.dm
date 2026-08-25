@@ -18,6 +18,7 @@
 	item_state = "box"
 
 	slots = 2
+	w_class = W_CLASS_TINY
 	max_wclass = W_CLASS_TINY
 	spawn_contents = list(
 		/obj/item/reagent_containers/food/snacks/ration = 2,
