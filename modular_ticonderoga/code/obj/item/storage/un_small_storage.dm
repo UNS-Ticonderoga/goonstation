@@ -8,6 +8,14 @@
 /obj/item/storage/box/starter/un/make_my_stuff(onlyMaskAndOxygen)
 	return
 
+/obj/item/storage/box/uniform
+	name = "uniform box"
+	desc = "A box for holding military uniform items."
+	check_wclass = STORAGE_CHECK_W_CLASS_INCLUDE
+	can_hold = list(
+		/obj/item/clothing/suit/field_jacket,
+	)
+
 /obj/item/storage/box/un_ration
 	name = "emergency ration box"
 	desc = "A box of Emergency Ration, version five (ER-5) food bars."
