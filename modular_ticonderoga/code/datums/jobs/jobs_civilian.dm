@@ -99,6 +99,7 @@
 	ui_colour = TGUI_COLOUR_PINK
 	slot_back = list()
 	slot_belt = list(/obj/item/storage/fanny/funny)
+	slot_head = list(/obj/item/clothing/head/basecap/un)
 	slot_mask = list(/obj/item/clothing/mask/clown_hat)
 	slot_jump = list(/obj/item/clothing/under/misc/clown)
 	slot_foot = list(/obj/item/clothing/shoes/clown_shoes)
