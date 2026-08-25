@@ -9,8 +9,15 @@
 	return
 
 /obj/item/storage/box/uniform
-	name = "uniform box"
-	desc = "A box for holding military uniform items."
+	name = "garment bag"
+	desc = "A bag for holding uniform items."
+	modularized = TRUE
+
+	icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
+	inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_storage.dmi'
+	icon_state = "garment_bag"
+	item_state = "garment_bag"
+
 	check_wclass = STORAGE_CHECK_W_CLASS_INCLUDE
 	can_hold = list(
 		/obj/item/clothing/suit/field_jacket,
