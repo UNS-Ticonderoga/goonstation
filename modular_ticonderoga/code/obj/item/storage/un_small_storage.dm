@@ -46,7 +46,7 @@
 		return
 
 	// For clerical error.
-	var/obj/item/card/id/owner_id = get_id(owner)
+	var/obj/item/card/id/owner_id = owner.get_id()
 
 	var/owner_rank = owner.mind?.assigned_rank ? "[owner.mind.assigned_rank.name]" : ""
 	var/owner_role = owner.mind?.assigned_role ? "[owner.mind.assigned_role]" : ""
