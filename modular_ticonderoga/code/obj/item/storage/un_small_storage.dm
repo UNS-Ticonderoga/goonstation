@@ -18,10 +18,23 @@
 	icon_state = "garment_bag"
 	item_state = "garment_bag"
 
-	check_wclass = STORAGE_CHECK_W_CLASS_INCLUDE
+	slots = 4
 	can_hold = list(
-		/obj/item/clothing/suit/field_jacket,
+		/obj/item/clothing,
 	)
+
+/obj/item/storage/box/uniform/New(mob/living/carbon/human/owner)
+	. = ..()
+	if (!ishuman(owner))
+		return
+
+	// For clerical error.
+	var/obj/item/card/id/owner_id = get_id(owner)
+
+	var/owner_rank = owner.mind?.assigned_rank ? "[owner.mind.assigned_rank.name]" : ""
+	var/owner_role = owner.mind?.assigned_role ? "[owner.mind.assigned_role]" : ""
+
+	desc += " This one belongs to [owner_rank && "[owner_rank] "][owner_id ? owner_id.registered : owner][owner_role && ", [owner_role]"]."
 
 /obj/item/storage/box/un_ration
 	name = "emergency ration box"

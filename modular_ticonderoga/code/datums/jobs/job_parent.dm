@@ -30,7 +30,7 @@
 	if (!length(uniform_box_items))
 		return
 
-	var/obj/item/storage/box/uniform/uniform_box = new()
+	var/obj/item/storage/box/uniform/uniform_box = new(target)
 	target.stow_in_available(uniform_box, FALSE)
 
 	for (var/obj/item/unequipped_item as anything in uniform_box_items)
