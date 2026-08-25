@@ -114,7 +114,13 @@
 
 		var/wear_state = src.w_uniform.wear_state || src.w_uniform.icon_state
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
-		if (wear_state in typeinfo?.clothing_icon_states["uniform"])
+// TICONDEROGA CHANGE
+		if (src.w_uniform.modularized && (wear_state in typeinfo?.clothing_icon_states["modular_uniform"]))
+			suit_image.icon = typeinfo.clothing_icons["modular_uniform"]
+		else if (wear_state in typeinfo?.clothing_icon_states["uniform"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states["uniform"])
+// TICONDEROGA CHANGE END
 			suit_image.icon = typeinfo.clothing_icons["uniform"]
 		else
 			suit_image.icon = src.w_uniform.wear_image_icon
@@ -262,7 +268,13 @@
 		src.wear_suit.wear_image.filters = src.wear_suit.filters.Copy() + src.mutantrace?.apply_clothing_filters(src.wear_suit)
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
 		var/wear_state = src.wear_suit.wear_state || src.wear_suit.icon_state
-		if (wear_state in typeinfo?.clothing_icon_states["overcoats"])
+// TICONDEROGA CHANGE
+		if (src.wear_suit.modularized && (wear_state in typeinfo?.clothing_icon_states["modular_overcoats"]))
+			src.wear_suit.wear_image.icon = typeinfo.clothing_icons["modular_overcoats"]
+		else if (wear_state in typeinfo?.clothing_icon_states["overcoats"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states["overcoats"])
+// TICONDEROGA CHANGE END
 			src.wear_suit.wear_image.icon = typeinfo.clothing_icons["overcoats"]
 		else
 			src.wear_suit.wear_image.icon = src.wear_suit.wear_image_icon
@@ -304,7 +316,16 @@
 		var/wear_state = src.back.wear_state || src.back.icon_state
 		var/no_offset = FALSE
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
-		if (wear_state in typeinfo?.clothing_icon_states["back"]) //checks if they are a mutantrace with special back sprites and then replaces them if they do
+// TICONDEROGA CHANGE
+		if (src.back.modularized && (wear_state in typeinfo?.clothing_icon_states["modular_back"]))
+			src.back.wear_image.icon = typeinfo.clothing_icons["modular_back"]
+			no_offset = TRUE
+			src.back.wear_image.pixel_x = initial(src.back.wear_image.pixel_x)
+			src.back.wear_image.pixel_y = initial(src.back.wear_image.pixel_y)
+		else if (wear_state in typeinfo?.clothing_icon_states["back"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states["back"]) //checks if they are a mutantrace with special back sprites and then replaces them if they do
+// TICONDEROGA CHANGE END
 			src.back.wear_image.icon = typeinfo.clothing_icons["back"]
 			no_offset = TRUE
 			src.back.wear_image.pixel_x = initial(src.back.wear_image.pixel_x)
@@ -399,7 +420,16 @@
 
 		var/wear_state = src.wear_mask.wear_state || src.wear_mask.icon_state
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
-		if (wear_state in typeinfo?.clothing_icon_states?["mask"])
+// TICONDEROGA CHANGE
+		if (src.wear_mask.modularized && (wear_state in typeinfo?.clothing_icon_states?["modular_mask"]))
+			src.wear_mask.wear_image.icon = typeinfo.clothing_icons["modular_mask"]
+			no_offset = TRUE
+			src.wear_mask.wear_image.pixel_x = initial(src.wear_mask.wear_image.pixel_x)
+			src.wear_mask.wear_image.pixel_y = initial(src.wear_mask.wear_image.pixel_y)
+		else if (wear_state in typeinfo?.clothing_icon_states?["mask"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states?["mask"])
+// TICONDEROGA CHANGE END
 			src.wear_mask.wear_image.icon = typeinfo.clothing_icons["mask"]
 			no_offset = TRUE
 			src.wear_mask.wear_image.pixel_x = initial(src.wear_mask.wear_image.pixel_x)
@@ -432,7 +462,16 @@
 		var/no_offset = FALSE
 		var/wear_state = src.head.wear_state || src.head.icon_state
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
-		if (wear_state in typeinfo?.clothing_icon_states["head"])
+// TICONDEROGA CHANGE
+		if (src.head.modularized && (wear_state in typeinfo?.clothing_icon_states["modular_head"]))
+			src.head.wear_image.icon = typeinfo.clothing_icons["modular_head"]
+			no_offset = TRUE
+			src.head.wear_image.pixel_x = initial(src.head.wear_image.pixel_x)
+			src.head.wear_image.pixel_y = initial(src.head.wear_image.pixel_y)
+		else if (wear_state in typeinfo?.clothing_icon_states["head"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states["head"])
+// TICONDEROGA CHANGE END
 			src.head.wear_image.icon = typeinfo.clothing_icons["head"]
 			no_offset = TRUE
 			src.head.wear_image.pixel_x = initial(src.head.wear_image.pixel_x)
@@ -463,7 +502,16 @@
 		var/wear_state = src.belt.wear_state || src.belt.item_state || src.belt.icon_state
 		var/no_offset = FALSE
 		var/typeinfo/datum/mutantrace/typeinfo = src.mutantrace?.get_typeinfo()
-		if (wear_state in typeinfo?.clothing_icon_states["belt"]) //checks if they are a mutantrace with special belt sprites and then replaces them if they do
+// TICONDEROGA CHANGE
+		if (src.belt.modularized && (wear_state in typeinfo?.clothing_icon_states["modular_belt"]))
+			src.belt.wear_image.icon = typeinfo.clothing_icons["modular_belt"]
+			no_offset = TRUE
+			src.belt.wear_image.pixel_x = initial(src.belt.wear_image.pixel_x)
+			src.belt.wear_image.pixel_y = initial(src.belt.wear_image.pixel_y)
+		else if (wear_state in typeinfo?.clothing_icon_states["belt"])
+// TICONDEROGA CHANGE ORIGINAL
+		// if (wear_state in typeinfo?.clothing_icon_states["belt"]) //checks if they are a mutantrace with special belt sprites and then replaces them if they do
+// TICONDEROGA CHANGE END
 			src.belt.wear_image.icon = typeinfo.clothing_icons["belt"]
 			no_offset = TRUE
 			src.belt.wear_image.pixel_x = initial(src.belt.wear_image.pixel_x)
