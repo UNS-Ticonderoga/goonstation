@@ -16,6 +16,7 @@
 /obj/item/storage/backpack/security/un
 	name = "marine field pack"
 	desc = "A backpack held together with a steel frame. Perfect for a 40 mile ruck march."
+	satchel_variant = null
 	modularized = TRUE
 
 	icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
