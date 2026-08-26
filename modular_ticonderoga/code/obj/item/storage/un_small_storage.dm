@@ -3,11 +3,8 @@
 	desc = "A UN Peacekeeper Corps Navy canvas bag containing survival supplies."
 	modularized = TRUE
 
-	// icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
-	// icon_state = "box-survival"
-
-	// Placeholder.
-	icon_state = "lunchbox_brown"
+	icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
+	icon_state = "box-survival"
 
 	check_wclass = STORAGE_CHECK_W_CLASS_INCLUDE
 	spawn_contents = list(
@@ -32,8 +29,8 @@
 
 	icon = 'modular_ticonderoga/icons/obj/items/storage.dmi'
 	inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_storage.dmi'
-	icon_state = "garment_bag"
-	item_state = "garment_bag"
+	icon_state = "box-uniform"
+	item_state = "box-uniform"
 
 	slots = 4
 	can_hold = list(
