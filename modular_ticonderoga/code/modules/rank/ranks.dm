@@ -43,7 +43,7 @@ ABSTRACT_TYPE(/datum/rank/enlisted)
 ABSTRACT_TYPE(/datum/rank/enlisted/nco)
 /datum/rank/enlisted/nco
 	rank_items = list(
-		SLOT_HEAD = /obj/item/clothing/head/fancy/un/officer,
+		SLOT_HEAD = /obj/item/clothing/head/fancy/un/nco,
 		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_khakis,
 	)
 
