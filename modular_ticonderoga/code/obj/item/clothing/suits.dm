@@ -38,8 +38,9 @@
 		return
 
 	. += "[SPAN_ALERT("<b><i>You</i> definitely aren't supposed to put this on.</b> ")]"
+
 /obj/item/clothing/suit/field_jacket
-	name = "PCN field jacket"
+	name = "\improper PCN field jacket"
 	desc = "A field jacket issued by the United Nations Peacekeeper Corps Navy. How many owners has this one had?"
 	body_parts_covered = TORSO|ARMS
 	bloodoverlayimage = SUITBLOOD_COAT
@@ -61,7 +62,7 @@
 	src.AddComponent(/datum/component/toggle_coat, coat_style = "[src.coat_style]", buttoned = TRUE)
 
 /obj/item/clothing/suit/armor/vest/un
-	name = "UNPC flak vest"
+	name = "\improper UNPC flak vest"
 	desc = "A flak vest in bright United Nations blue. Gaudy!"
 	modularized = TRUE
 

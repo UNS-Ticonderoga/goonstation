@@ -1,5 +1,5 @@
 /obj/item/clothing/under/rank/service_whites
-	name = "PCN service whites"
+	name = "\improper PCN service whites"
 	desc = "Attract not the ire of those in the summer whites of the Navy."
 	modularized = TRUE
 
@@ -9,7 +9,7 @@
 	wear_state = "service-whites"
 
 /obj/item/clothing/under/rank/service_khakis
-	name = "PCN service khakis"
+	name = "\improper PCN service khakis"
 	desc = "Seen all around the Navy on clerical staff, musicians, and any others without the need to leave the safety of their air-conditioned offices."
 	modularized = TRUE
 
@@ -19,7 +19,7 @@
 	wear_state = "service-khakis"
 
 /obj/item/clothing/under/rank/shipboard_coveralls
-	name = "PCN working coveralls"
+	name = "\improper PCN working coveralls"
 	desc = "The baggy, rugged uniforms of the humble grunt, POG, and anyone else working with their hands."
 	modularized = TRUE
 

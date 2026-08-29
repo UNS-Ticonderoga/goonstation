@@ -13,31 +13,31 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 	setProperty("meleeprot_head", 3)
 
 /obj/item/clothing/head/fancy/un/bridge
-	name = "PCN bridge officer's cap"
+	name = "\improper PCN bridge officer's cap"
 	desc = "This hat has an air of authority granted by centuries of human naval traditions. It is also derisively called the milkman's cap."
 	icon_state = "officer_cap-bridge"
 	item_state = "officer_cap-bridge"
 
 /obj/item/clothing/head/fancy/un/officer
-	name = "PCN officer's cap"
+	name = "\improper PCN officer's cap"
 	desc = "The hat for those who demand greater respect than what their rank provides."
 	icon_state = "officer_cap"
 	item_state = "officer_cap"
 
 /obj/item/clothing/head/fancy/un/nco
-	name = "PCN garrison cap"
+	name = "\improper PCN garrison cap"
 	desc = "Issued to non-commissioned officers. Are we flipping burgers or something?"
 	icon_state = "garrison_cap"
 	item_state = "garrison_cap"
 
 /obj/item/clothing/head/fancy/un/marine
-	name = "PCN campaign hat"
+	name = "\improper PCN campaign hat"
 	desc = "Does not come with earplugs."
 	icon_state = "campaign_hat"
 	item_state = "campaign_hat"
 
 /obj/item/clothing/head/UNberet
-	name = "UNPC beret"
+	name = "\improper UNPC beret"
 	desc = "The beret of the vaunted United Nations Peacekeeper Corps. That is, when the Security Council gets their act together."
 	modularized = TRUE
 
@@ -63,10 +63,10 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 
 /obj/item/clothing/head/basecap/un/New()
 	..()
-	name = "UNS Ticonderoga cap"
+	name = "\improper UNS Ticonderoga cap"
 
 /obj/item/clothing/head/helmet/un
-	name = "UNPC helmet"
+	name = "\improper UNPC helmet"
 	desc = "The iconic Blue Helmet of the United Nations Peacekeeper Corps, always seemingly showing up the moment after they would've been useful."
 	modularized = TRUE
 	c_flags = COVERSEYES | BLOCKCHOKE
