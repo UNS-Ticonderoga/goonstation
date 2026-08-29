@@ -18,23 +18,19 @@ var/global/list/un_ranks = list()
 		return (rank_b.order - rank_a.order)
 	return rank_b.rank_type == RANK_TYPE_OFFICER ? 1 : -1
 
-/// Returns `TRUE` for NCOs and Commissioned Officers. Used for equipment distribution.
-/proc/is_officer(mob/living/carbon/human/target)
+/proc/get_rank(mob/living/carbon/human/target)
 	. = FALSE
 
 	if (!ishuman(target))
 		return
 	if (!ismind(target.mind))
 		return
-	if (!target.mind.assigned_rank)
+
+	var/datum/rank/target_rank = target.mind?.assigned_rank
+	if (!istype(target_rank))
 		return
 
-	var/datum/rank/target_rank = target.mind.assigned_rank
-
-	if (target_rank.rank_type == RANK_TYPE_OFFICER)
-		return TRUE
-	if (target_rank.name in RANK_ENLISTED_NCO)
-		return TRUE
+	. = target_rank
 
 /datum/mind/proc/assign_rank(datum/job/job)
 	var/rank_name = ""

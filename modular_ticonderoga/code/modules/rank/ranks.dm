@@ -7,6 +7,7 @@ ABSTRACT_TYPE(/datum/rank/officer/bridge)
 	rank_items = list(
 		SLOT_HEAD = /obj/item/clothing/head/fancy/un/bridge,
 		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_whites,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/officer_coat,
 	)
 
 /datum/rank/officer/bridge/lcdr
@@ -14,21 +15,40 @@ ABSTRACT_TYPE(/datum/rank/officer/bridge)
 	short_name = "LCDR"
 	order = 4
 
+	rank_items = list(
+		SLOT_HEAD = /obj/item/clothing/head/fancy/un/bridge,
+		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_whites,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/officer_coat/lcdr,
+	)
+
 /datum/rank/officer/bridge/lt
 	name = RANK_OFFICER_O3
 	short_name = "LT"
 	order = 3
+
+	rank_items = list(
+		SLOT_HEAD = /obj/item/clothing/head/fancy/un/bridge,
+		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_whites,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/officer_coat/lt,
+	)
 
 /datum/rank/officer/bridge/slt
 	name = RANK_OFFICER_O2
 	short_name = "SLT"
 	order = 2
 
+	rank_items = list(
+		SLOT_HEAD = /obj/item/clothing/head/fancy/un/bridge,
+		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_whites,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/officer_coat/slt,
+	)
+
 ABSTRACT_TYPE(/datum/rank/officer/junior)
 /datum/rank/officer/junior
 	rank_items = list(
 		SLOT_HEAD = /obj/item/clothing/head/fancy/un/officer,
 		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_khakis,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/field_jacket,
 	)
 
 /datum/rank/officer/junior/ens
@@ -45,6 +65,7 @@ ABSTRACT_TYPE(/datum/rank/enlisted/nco)
 	rank_items = list(
 		SLOT_HEAD = /obj/item/clothing/head/fancy/un/nco,
 		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/service_khakis,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/field_jacket,
 	)
 
 /datum/rank/enlisted/nco/po1
@@ -67,6 +88,7 @@ ABSTRACT_TYPE(/datum/rank/enlisted/junior)
 	rank_items = list(
 		SLOT_HEAD = /obj/item/clothing/head/basecap/un,
 		SLOT_W_UNIFORM = /obj/item/clothing/under/rank/shipboard_coveralls,
+		SLOT_WEAR_SUIT = /obj/item/clothing/suit/field_jacket,
 	)
 
 /datum/rank/enlisted/junior/s1c
