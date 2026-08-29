@@ -24,6 +24,18 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 	icon_state = "officer_cap"
 	item_state = "officer_cap"
 
+/obj/item/clothing/head/fancy/un/nco
+	name = "PCN garrison cap"
+	desc = "Issued to non-commissioned officers. Are we flipping burgers or something?"
+	icon_state = "garrison_cap"
+	item_state = "garrison_cap"
+
+/obj/item/clothing/head/fancy/un/marine
+	name = "PCN campaign hat"
+	desc = "Does not come with earplugs."
+	icon_state = "campaign_hat"
+	item_state = "campaign_hat"
+
 /obj/item/clothing/head/UNberet
 	name = "UNPC beret"
 	desc = "The beret of the vaunted United Nations Peacekeeper Corps. That is, when the Security Council gets their act together."
