@@ -49,7 +49,7 @@
 	)
 
 /datum/job/command/head_of_security
-	name = "Marine Commanding Officer"
+	name = "Marine Duty Officer"
 	rank_type = RANK_OFFICER_O3
 	alias_names = list("Head of Security")
 	limit = 1
@@ -65,6 +65,7 @@
 	items_in_backpack = list(/obj/item/device/flash)
 	wiki_link = "https://wiki.ss13.co/Head_of_Security"
 	rounds_needed_to_play = ROUNDS_MIN_HIGHSEC
+	slot_head = list(/obj/item/clothing/head/fancy/un/marine)
 	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
 	slot_back = list(/obj/item/storage/backpack/security/un)
 	slot_belt = list(/obj/item/device/pda2/hos)
