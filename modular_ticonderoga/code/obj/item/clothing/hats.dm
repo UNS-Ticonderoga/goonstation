@@ -45,8 +45,8 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 /obj/item/clothing/head/fancy/un/beret
 	name = "\improper UNPC beret"
 	desc = "The beret of the vaunted United Nations Peacekeeper Corps. That is, when the Security Council gets their act together."
-	icon_state = "beret-un"
-	item_state = "beret-un"
+	icon_state = "unpc-beret"
+	item_state = "unpc-beret"
 
 /obj/item/clothing/head/basecap/un
 	hatcolour = "un"
@@ -72,8 +72,8 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
 
-	icon_state = "helmet-un"
-	item_state = "helmet-un"
+	icon_state = "unpc-helmet"
+	item_state = "unpc-helmet"
 
 /obj/item/clothing/head/helmet/un/setupProperties()
 	..()
