@@ -5,8 +5,8 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
 	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
 
-	icon_state = "officer_cap"
-	item_state = "officer_cap"
+	icon_state = "pcn-enlisted"
+	item_state = "pcn-enlisted"
 
 /obj/item/clothing/head/fancy/un/setupProperties()
 	..()
@@ -15,41 +15,38 @@ ABSTRACT_TYPE(/obj/item/clothing/head/fancy/un)
 /obj/item/clothing/head/fancy/un/bridge
 	name = "\improper PCN bridge officer's cap"
 	desc = "This hat has an air of authority granted by centuries of human naval traditions. It is also derisively called the milkman's cap."
-	icon_state = "officer_cap-bridge"
-	item_state = "officer_cap-bridge"
+	icon_state = "pcn-bridge"
+	item_state = "pcn-bridge"
 
 /obj/item/clothing/head/fancy/un/officer
 	name = "\improper PCN officer's cap"
 	desc = "The hat for those who demand greater respect than what their rank provides."
-	icon_state = "officer_cap"
-	item_state = "officer_cap"
+	icon_state = "pcn-officer"
+	item_state = "pcn-officer"
 
 /obj/item/clothing/head/fancy/un/nco
-	name = "\improper PCN garrison cap"
+	name = "\improper PCN NCO's garrison cap"
 	desc = "Issued to non-commissioned officers. Are we flipping burgers or something?"
-	icon_state = "garrison_cap"
-	item_state = "garrison_cap"
+	icon_state = "pcn-nco"
+	item_state = "pcn-nco"
 
-/obj/item/clothing/head/fancy/un/marine
+/obj/item/clothing/head/fancy/un/enlisted
+	name = "\improper PCN enlisted sailor's cap"
+	desc = "Issued to junior enlisted sailors. Very not spiffy."
+	icon_state = "pcn-enlisted"
+	item_state = "pcn-enlisted"
+
+/obj/item/clothing/head/fancy/un/mdo
 	name = "\improper PCN campaign hat"
 	desc = "Does not come with earplugs."
-	icon_state = "campaign_hat"
-	item_state = "campaign_hat"
+	icon_state = "pcn-mdo"
+	item_state = "pcn-mdo"
 
-/obj/item/clothing/head/UNberet
+/obj/item/clothing/head/fancy/un/beret
 	name = "\improper UNPC beret"
 	desc = "The beret of the vaunted United Nations Peacekeeper Corps. That is, when the Security Council gets their act together."
-	modularized = TRUE
-
-	icon = 'modular_ticonderoga/icons/obj/clothing/item_hats.dmi'
-	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/head.dmi'
-
 	icon_state = "beret-un"
 	item_state = "beret-un"
-
-/obj/item/clothing/head/UNberet/setupProperties()
-	..()
-	setProperty("meleeprot_head", 3)
 
 /obj/item/clothing/head/basecap/un
 	hatcolour = "un"

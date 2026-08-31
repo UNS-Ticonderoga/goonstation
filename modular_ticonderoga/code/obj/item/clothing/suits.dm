@@ -1,4 +1,4 @@
-/obj/item/clothing/suit/officer_coat
+/obj/item/clothing/suit/un_coat
 	name = "\improper PCN officer's coat"
 	desc = "Even if covered in blood and soot, you must look prim and proper in the face of the enemy."
 	body_parts_covered = TORSO|ARMS
@@ -10,27 +10,27 @@
 	icon_state = "officer_coat"
 	item_state = "officer_coat"
 
-/obj/item/clothing/suit/officer_coat/setupProperties()
+/obj/item/clothing/suit/un_coat/setupProperties()
 	..()
 	setProperty("coldprot", 35)
 	setProperty("heatprot", 20)
 
-/obj/item/clothing/suit/officer_coat/slt
+/obj/item/clothing/suit/un_coat/slt
 	name = "\improper PCN Sublieutenant's coat"
 	icon_state = "officer_coat"
 	item_state = "officer_coat"
 
-/obj/item/clothing/suit/officer_coat/lt
+/obj/item/clothing/suit/un_coat/lt
 	name = "\improper PCN Lieutenant's coat"
 	icon_state = "officer_coat-lt"
 	item_state = "officer_coat-lt"
 
-/obj/item/clothing/suit/officer_coat/lcdr
+/obj/item/clothing/suit/un_coat/lcdr
 	name = "\improper PCN Lieutenant Commander's coat"
 	icon_state = "officer_coat-lcdr"
 	item_state = "officer_coat-lcdr"
 
-/obj/item/clothing/suit/officer_coat/lcdr/get_desc(dist, mob/user)
+/obj/item/clothing/suit/un_coat/lcdr/get_desc(dist, mob/user)
 	. = ..()
 
 	var/datum/rank/observer_rank = get_rank(user)
@@ -39,7 +39,7 @@
 
 	. += "[SPAN_ALERT("<b><i>You</i> definitely aren't supposed to put this on.</b> ")]"
 
-/obj/item/clothing/suit/field_jacket
+/obj/item/clothing/suit/un_jacket
 	name = "\improper PCN field jacket"
 	desc = "A field jacket issued by the United Nations Peacekeeper Corps Navy. How many owners has this one had?"
 	body_parts_covered = TORSO|ARMS
@@ -52,12 +52,12 @@
 	item_state = "field_jacket"
 	coat_style = "field_jacket"
 
-/obj/item/clothing/suit/field_jacket/setupProperties()
+/obj/item/clothing/suit/un_jacket/setupProperties()
 	..()
 	setProperty("coldprot", 25)
 	setProperty("heatprot", 15)
 
-/obj/item/clothing/suit/field_jacket/New()
+/obj/item/clothing/suit/un_jacket/New()
 	..()
 	src.AddComponent(/datum/component/toggle_coat, coat_style = "[src.coat_style]", buttoned = TRUE)
 

@@ -1,7 +1,8 @@
 /datum/job/civilian
 	receives_un_gear = TRUE
 	slot_back = list(/obj/item/storage/backpack/un)
-	slot_jump = list(/obj/item/clothing/under/rank/shipboard_coveralls)
+	slot_head = list(/obj/item/clothing/head/basecap/un)
+	slot_jump = list(/obj/item/clothing/under/rank/un/coveralls)
 	slot_foot = list(/obj/item/clothing/shoes/swat)
 
 /datum/job/civilian/chef
@@ -63,7 +64,7 @@
 	wages = PAY::UNTRAINED
 	trait_list = list("training_chaplain")
 	access_string = "Chaplain"
-	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
+	slot_jump = list(/obj/item/clothing/under/rank/un/officer)
 	slot_belt = list(/obj/item/device/pda2/chaplain)
 	slot_ears = list(/obj/item/device/radio/headset/civilian/chaplain)
 	slot_lhan = list(/obj/item/bible/loaded)
