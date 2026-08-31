@@ -40,14 +40,14 @@
 
 /datum/job/engineering/quartermaster
 	name = "Supply Technician"
-	alias_names = list("Quartermaster", "Miner")
+	alias_names = list("Quartermaster")
 	limit = 3
 	wages = PAY::TRADESMAN
-	trait_list = list("training_quartermaster", "training_miner")
+	trait_list = list("training_quartermaster")
 	access_string = "Quartermaster"
 	slot_suit = list()
 	slot_glov = list(/obj/item/clothing/gloves/black)
-	slot_belt = list(/obj/item/storage/belt/mining/prepared)
+	slot_belt = list(/obj/item/storage/belt/utility)
 	slot_ears = list(/obj/item/device/radio/headset/shipping)
 	slot_poc1 = list(/obj/item/device/pda2/quartermaster)
 	slot_poc2 = list(/obj/item/crowbar)
