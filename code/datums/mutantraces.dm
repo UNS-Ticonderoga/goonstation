@@ -1577,6 +1577,14 @@ TYPEINFO_NEW(/datum/mutantrace/monkey)
 	src.clothing_icons["mask"] = 'icons/mob/monkey/mask.dmi'
 	src.clothing_icons["head"] = 'icons/mob/monkey/head.dmi'
 	src.clothing_icons["belt"] = 'icons/mob/monkey/belt.dmi'
+// TICONDEROGA CHANGE
+	src.clothing_icons["modular_uniform"] = 'modular_ticonderoga/icons/mob/monkey/jumpsuits.dmi'
+	src.clothing_icons["modular_overcoats"] = 'modular_ticonderoga/icons/mob/monkey/overcoats.dmi'
+	src.clothing_icons["modular_back"] = 'modular_ticonderoga/icons/mob/monkey/back.dmi'
+	src.clothing_icons["modular_mask"] = 'modular_ticonderoga/icons/mob/monkey/mask.dmi'
+	src.clothing_icons["modular_head"] = 'modular_ticonderoga/icons/mob/monkey/head.dmi'
+	src.clothing_icons["modular_belt"] = 'modular_ticonderoga/icons/mob/monkey/belt.dmi'
+// TICONDEROGA CHANGE END
 	..()
 /datum/mutantrace/monkey
 	name = "monkey"

@@ -1,6 +1,6 @@
 /datum/job/security
 	receives_un_gear = TRUE
-	slot_jump = list(/obj/item/clothing/under/rank/service_khakis)
+	slot_jump = list(/obj/item/clothing/under/rank/un/officer)
 	slot_back = list(/obj/item/storage/backpack/security/un)
 	slot_foot = list(/obj/item/clothing/shoes/swat)
 
@@ -18,7 +18,7 @@
 	access_string = "Security Officer"
 	can_roll_antag = FALSE
 	receives_implants = list(/obj/item/implant/health/security/anti_mindhack)
-	slot_head = list(/obj/item/clothing/head/UNberet)
+	slot_head = list(/obj/item/clothing/head/fancy/un/beret)
 	slot_belt = list(/obj/item/device/pda2/security)
 	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
 	slot_ears = list(/obj/item/device/radio/headset/security)
@@ -44,6 +44,7 @@
 	slot_glov = list(/obj/item/clothing/gloves/black)
 	slot_suit = list(/obj/item/clothing/suit/det_suit)
 	slot_ears = list(/obj/item/device/radio/headset/detective)
+	slot_back = list(/obj/item/storage/backpack/un)
 	items_in_backpack = list(
 		/obj/item/clothing/glasses/vr,
 		/obj/item/storage/box/detectivegun,

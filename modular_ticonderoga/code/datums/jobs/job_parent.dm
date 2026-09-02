@@ -4,7 +4,7 @@
 
 /proc/give_un_gear(datum/job/target_job, mob/living/carbon/human/target)
 	// Type paths for items to stuff in UN starter boxes.
-	var/list/starter_box_items = list()
+	var/list/uniform_box_items = list()
 
 	// Rank/Job-specific gear.
 	var/datum/rank/target_rank = target.mind?.assigned_rank || null
@@ -20,21 +20,21 @@
 		if (istype(item_in_slot, item_type))
 			continue
 
-		starter_box_items |= item_type
+		uniform_box_items |= item_type
 
-	// All UN personnel receive SWAT boots and a field jacket.
-	starter_box_items |= /obj/item/clothing/suit/field_jacket
+	// All UN personnel receive SWAT boots.
 	if (!istype(target.shoes, /obj/item/clothing/shoes/swat))
-		starter_box_items |= /obj/item/clothing/shoes/swat
+		uniform_box_items |= /obj/item/clothing/shoes/swat
 
-	if (!length(starter_box_items))
+	if (!length(uniform_box_items))
 		return
 
-	var/obj/item/storage/box/starter/un/starter_box = locate(/obj/item/storage/box/starter/un) in (target.back?.contents | target.belt?.contents)
+	var/obj/item/storage/box/uniform/uniform_box = new(target)
+	target.stow_in_available(uniform_box, FALSE)
 
-	for (var/obj/item/unequipped_item as anything in starter_box_items)
+	for (var/obj/item/unequipped_item as anything in uniform_box_items)
 		unequipped_item = new unequipped_item()
-		if (starter_box)
-			starter_box.storage.add_contents(unequipped_item, target, FALSE)
+		if (uniform_box)
+			uniform_box.storage.add_contents(unequipped_item, target, FALSE)
 			continue
 		target.stow_in_available(unequipped_item, FALSE)

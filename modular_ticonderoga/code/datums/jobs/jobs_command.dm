@@ -1,7 +1,7 @@
 /datum/job/command
 	receives_un_gear = TRUE
 	slot_head = list(/obj/item/clothing/head/fancy/un/bridge)
-	slot_jump = list(/obj/item/clothing/under/rank/service_whites)
+	slot_jump = list(/obj/item/clothing/under/rank/un/bridge)
 	slot_foot = list(/obj/item/clothing/shoes/swat)
 
 /datum/job/command/captain
@@ -17,6 +17,7 @@
 	world_announce_priority = ANNOUNCE_ORDER_CAPTAIN
 	receives_implants = list(/obj/item/implant/health/security/anti_mindhack/command)
 	wiki_link = "https://wiki.ss13.co/Captain"
+	slot_suit = list(/obj/item/clothing/suit/un_coat/lcdr)
 	slot_belt = list(/obj/item/device/pda2/captain)
 	slot_back = list(/obj/item/storage/backpack/un)
 	slot_eyes = list(/obj/item/clothing/glasses/sunglasses)
@@ -38,6 +39,7 @@
 	allow_antag_fallthrough = FALSE
 	receives_miranda = TRUE
 	world_announce_priority = ANNOUNCE_ORDER_HOP
+	slot_suit = list(/obj/item/clothing/suit/un_coat/lt)
 	slot_back = list(/obj/item/storage/backpack/un)
 	slot_belt = list(/obj/item/device/pda2/hop)
 	slot_ears = list(/obj/item/device/radio/headset/command/hop)
@@ -49,7 +51,7 @@
 	)
 
 /datum/job/command/head_of_security
-	name = "Marine Commanding Officer"
+	name = "Marine Duty Officer"
 	rank_type = RANK_OFFICER_O3
 	alias_names = list("Head of Security")
 	limit = 1
@@ -65,6 +67,7 @@
 	items_in_backpack = list(/obj/item/device/flash)
 	wiki_link = "https://wiki.ss13.co/Head_of_Security"
 	rounds_needed_to_play = ROUNDS_MIN_HIGHSEC
+	slot_head = list(/obj/item/clothing/head/fancy/un/mdo)
 	slot_suit = list(/obj/item/clothing/suit/armor/vest/un)
 	slot_back = list(/obj/item/storage/backpack/security/un)
 	slot_belt = list(/obj/item/device/pda2/hos)
@@ -81,6 +84,7 @@
 	trait_list = list("training_engineer")
 	access_string = "Chief Engineer"
 	wiki_link = "https://wiki.ss13.co/Chief_Engineer"
+	slot_suit = list(/obj/item/clothing/suit/hi_vis)
 	slot_back = list(/obj/item/storage/backpack/engineering/un)
 	slot_belt = list(/obj/item/storage/belt/utility/prepared/ceshielded)
 	slot_glov = list(/obj/item/clothing/gloves/yellow)
@@ -102,6 +106,7 @@
 	trait_list = list("training_medical")
 	access_string = "Medical Director"
 	wiki_link = "https://wiki.ss13.co/Medical_Director"
+	slot_suit = list(/obj/item/clothing/suit/un_coat/lt)
 	slot_back = list(/obj/item/storage/backpack/medic/un)
 	slot_glov = list(/obj/item/clothing/gloves/latex)
 	slot_belt = list(/obj/item/storage/belt/medical/prepared)
