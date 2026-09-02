@@ -127,6 +127,9 @@
 	slot_ears = list()
 	slot_card = null
 	slot_back = list()
+	slot_head = list()
+	slot_jump = list()
+	slot_foot = list()
 	slot_belt = list()
 	items_in_backpack = list()
 	uses_character_profile = FALSE
@@ -153,6 +156,9 @@
 	slot_ears = list()
 	slot_card = null
 	slot_back = list()
+	slot_head = list()
+	slot_jump = list()
+	slot_foot = list()
 	slot_belt = list()
 	items_in_backpack = list()
 	uses_character_profile = FALSE
