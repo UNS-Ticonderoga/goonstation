@@ -85,4 +85,5 @@
 /obj/item/storage/pouch/fal
 	name = "LAR magazine pouch"
 	icon_state = "ammopouch-double"
+	slots = 2
 	spawn_contents = list(/obj/item/ammo/bullets/fal = 2)
