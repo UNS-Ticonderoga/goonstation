@@ -3221,6 +3221,7 @@
 #include "modular_ticonderoga\code\obj\item\clothing\masks.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\suits.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\uniforms.dm"
+#include "modular_ticonderoga\code\obj\item\gun\fal.dm"
 #include "modular_ticonderoga\code\obj\item\storage\un_backpacks.dm"
 #include "modular_ticonderoga\code\obj\item\storage\un_small_storage.dm"
 #include "modular_ticonderoga\code\obj\item\storage\webbing.dm"
