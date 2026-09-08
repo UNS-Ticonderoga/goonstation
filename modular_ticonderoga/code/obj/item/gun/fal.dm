@@ -81,3 +81,8 @@
 	sname = "two-round burst"
 	cost = 2
 	shot_number = 2
+
+/obj/item/storage/pouch/fal
+	name = "LAR magazine pouch"
+	icon_state = "ammopouch-double"
+	spawn_contents = list(/obj/item/ammo/bullets/fal = 2)
