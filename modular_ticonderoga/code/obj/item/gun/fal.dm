@@ -28,7 +28,27 @@
 /obj/item/gun/kinetic/fal/New()
 	src.ammo = new src.default_magazine
 	src.set_current_projectile(new /datum/projectile/bullet/fal)
+	src.projectiles = list(src.current_projectile, new /datum/projectile/bullet/fal/burst)
 	..()
+
+/obj/item/gun/kinetic/fal/attackby(obj/item/ammo/bullets/b, mob/user)
+	. = ..()
+
+	if (istype(src.current_projectile, /datum/projectile/bullet/fal/burst))
+		src.set_current_projectile(new /datum/projectile/bullet/fal/burst)
+		src.projectiles = list(new /datum/projectile/bullet/fal, current_projectile)
+	else
+		src.set_current_projectile(new /datum/projectile/bullet/fal)
+		src.projectiles = list(src.current_projectile, new /datum/projectile/bullet/fal/burst)
+
+/obj/item/gun/kinetic/fal/attack_self(mob/user)
+	..()
+	if (istype(src.current_projectile, /datum/projectile/bullet/fal/burst))
+		spread_angle = 7.5
+		shoot_delay = 4 DECI SECONDS
+	else
+		spread_angle = 0
+		shoot_delay = 3 DECI SECONDS
 
 /obj/item/ammo/bullets/fal
 	sname = "7.62x51mm NATO"
@@ -56,3 +76,8 @@
 	implanted = /obj/item/implant/projectile/bullet_308
 	casing = /obj/item/casing/rifle
 	ricochets = TRUE
+
+/datum/projectile/bullet/fal/burst
+	sname = "two-round burst"
+	cost = 2
+	shot_number = 2
