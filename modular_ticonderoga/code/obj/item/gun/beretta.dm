@@ -11,7 +11,7 @@
 	shoot_delay = 2 DECI SECONDS
 	auto_eject = TRUE
 	has_empty_state = TRUE
-	// fire_animation = TRUE
+	fire_animation = TRUE
 	default_magazine = /obj/item/ammo/bullets/bullet_9mm
 
 /obj/item/gun/kinetic/beretta/New()
