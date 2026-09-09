@@ -86,8 +86,8 @@
 	cost = 2
 	shot_number = 2
 
+// Testing only! Do not issue these to players!
 /obj/item/storage/pouch/fal
 	name = "LAR magazine pouch"
 	icon_state = "ammopouch-double"
-	slots = 2
-	spawn_contents = list(/obj/item/ammo/bullets/fal = 2)
+	spawn_contents = list(/obj/item/ammo/bullets/fal = 5)
