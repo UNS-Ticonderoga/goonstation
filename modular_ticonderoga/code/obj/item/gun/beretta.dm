@@ -8,7 +8,7 @@
 	contraband = 4
 	ammo_cats = list(AMMO_PISTOL_9MM)
 	max_ammo_capacity = 15
-	shoot_delay = 2
+	shoot_delay = 2 DECI SECONDS
 	auto_eject = TRUE
 	has_empty_state = TRUE
 	// fire_animation = TRUE
