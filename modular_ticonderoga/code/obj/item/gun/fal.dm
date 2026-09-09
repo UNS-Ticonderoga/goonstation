@@ -49,7 +49,7 @@
 		src.spread_angle = 9
 		src.shoot_delay = 5 DECI SECONDS
 	else
-		src.spread_angle = 0
+		src.spread_angle = initial(src.spread_angle)
 		src.shoot_delay = initial(src.shoot_delay)
 
 /obj/item/ammo/bullets/fal
