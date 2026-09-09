@@ -44,9 +44,10 @@
 
 /obj/item/gun/kinetic/fal/attack_self(mob/user)
 	..()
+	// Equivalent spread angle to AKM, slightly longer shot delay to account for the FN FAL's massive recoil in auto.
 	if (istype(src.current_projectile, /datum/projectile/bullet/fal/burst))
-		src.spread_angle = 7.5
-		src.shoot_delay = 4 DECI SECONDS
+		src.spread_angle = 9
+		src.shoot_delay = 5 DECI SECONDS
 	else
 		src.spread_angle = 0
 		src.shoot_delay = initial(src.shoot_delay)
@@ -65,10 +66,11 @@
 	ammo_cat = AMMO_RIFLE_308
 	sound_load = 'sound/weapons/gunload_heavy.ogg'
 
+// Equivalent damage to the AKM's 7.62x39mm. Tempered due to the availability of LARs.
 /datum/projectile/bullet/fal
 	name = "bullet"
-	shot_sound = 'sound/weapons/assrifle.ogg'
-	damage = 40
+	shot_sound = 'modular_ticonderoga/sound/weapons/lar_shot.ogg'
+	damage = 45
 	cost = 1
 	shot_number = 1
 	damage_type = D_KINETIC
@@ -78,6 +80,7 @@
 	casing = /obj/item/casing/rifle
 	ricochets = TRUE
 
+// Two-round burst to emulate disciplined fire.
 /datum/projectile/bullet/fal/burst
 	sname = "two-round burst"
 	cost = 2
