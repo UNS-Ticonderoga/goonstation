@@ -44,7 +44,7 @@
 
 /obj/item/gun/kinetic/fal/attack_self(mob/user)
 	..()
-	// Equivalent spread angle to AKM, slightly longer shot delay to account for the FN FAL's massive recoil in auto.
+	// Equivalent spread angle to AKM, slightly longer shot delay and increased spread angle to account for the FN FAL's massive recoil in auto.
 	if (istype(src.current_projectile, /datum/projectile/bullet/fal/burst))
 		src.spread_angle = 9
 		src.shoot_delay = 5 DECI SECONDS
