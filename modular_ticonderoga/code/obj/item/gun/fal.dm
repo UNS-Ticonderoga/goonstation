@@ -22,6 +22,7 @@
 	two_handed = TRUE
 	can_dual_wield = FALSE
 	spread_angle = 0
+	shoot_delay = 3 DECI SECONDS
 	default_magazine = /obj/item/ammo/bullets/fal
 	ammobag_magazines = list(/obj/item/ammo/bullets/fal)
 
@@ -44,11 +45,11 @@
 /obj/item/gun/kinetic/fal/attack_self(mob/user)
 	..()
 	if (istype(src.current_projectile, /datum/projectile/bullet/fal/burst))
-		spread_angle = 7.5
-		shoot_delay = 4 DECI SECONDS
+		src.spread_angle = 7.5
+		src.shoot_delay = 4 DECI SECONDS
 	else
-		spread_angle = 0
-		shoot_delay = 3 DECI SECONDS
+		src.spread_angle = 0
+		src.shoot_delay = initial(src.shoot_delay)
 
 /obj/item/ammo/bullets/fal
 	sname = "7.62x51mm NATO"
