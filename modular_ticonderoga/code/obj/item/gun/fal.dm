@@ -1,6 +1,6 @@
 /obj/item/gun/kinetic/fal
 	name = "\improper Light Automatic Rifle"
-	desc = {"The right arm of the Free World. Though not free, many of these were dumped on the surplus market alongside their former Kalashnikov
+	desc = {"The right arm of the Frontier. Though not free, many of these were dumped on the surplus market alongside their former Kalashnikov
 			rivals. Uses 7.62x51mm NATO rounds."}
 	flags =  TABLEPASS | CONDUCT | USEDELAY
 	c_flags = ONBACK
