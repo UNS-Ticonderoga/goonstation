@@ -28,3 +28,19 @@ ABSTRACT_TYPE(/obj/item/clothing/under/rank/un)
 	desc = "The baggy, rugged garment of choice for anyone working with their hands. Highly informal, you'd fail inspection wearing one of these."
 	icon_state = "pcn-shipboard_coveralls"
 	wear_state = "pcn-shipboard_coveralls"
+
+/obj/item/clothing/under/misc/NT_rep
+	name = "\improper Nanotrasen Representative's uniform"
+	modularized = TRUE
+
+	icon = 'modular_ticonderoga/icons/obj/clothing/item_js.dmi'
+	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/worn_js.dmi'
+	icon_state = "nt-rep"
+	wear_state = "nt-rep"
+
+/obj/item/clothing/under/misc/NT_rep/get_desc(dist, mob/user)
+	if (user.mind?.assigned_role == "Nanotrasen Representative")
+		. = "You go get 'em, tiger! You're the dog-gone Nanotrasen representative!"
+	else
+		. = "Gaudy tie. Gaudy tie clip."
+
