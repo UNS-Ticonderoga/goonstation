@@ -3246,6 +3246,7 @@
 #include "modular_ticonderoga\code\modules\rank\rank.dm"
 #include "modular_ticonderoga\code\modules\rank\ranks.dm"
 #include "modular_ticonderoga\code\modules\storage\crates.dm"
+#include "modular_ticonderoga\code\modules\writing\papers.dm"
 #include "modular_ticonderoga\code\obj\decal\wayfinding_line.dm"
 #include "modular_ticonderoga\code\obj\item\card-un.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\hats.dm"
