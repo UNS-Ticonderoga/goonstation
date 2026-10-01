@@ -3,7 +3,7 @@
 	slot_back = list(/obj/item/storage/backpack/un)
 	slot_head = list(/obj/item/clothing/head/basecap/un)
 	slot_jump = list(/obj/item/clothing/under/rank/un/coveralls)
-	slot_foot = list(/obj/item/clothing/shoes/swat)
+	slot_foot = list(/obj/item/clothing/shoes/swat/un)
 
 /datum/job/civilian/chef
 	name = "Caterer"

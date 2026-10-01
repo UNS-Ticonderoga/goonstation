@@ -22,9 +22,9 @@
 
 		uniform_box_items |= item_type
 
-	// All UN personnel receive SWAT boots.
-	if (!istype(target.shoes, /obj/item/clothing/shoes/swat))
-		uniform_box_items |= /obj/item/clothing/shoes/swat
+	// All UN personnel receive military boots.
+	if (!istype(target.shoes, /obj/item/clothing/shoes/swat/un))
+		uniform_box_items |= /obj/item/clothing/shoes/swat/un
 
 	if (!length(uniform_box_items))
 		return

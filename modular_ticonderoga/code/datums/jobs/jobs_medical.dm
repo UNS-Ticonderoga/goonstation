@@ -1,6 +1,6 @@
 /datum/job/medical
 	receives_un_gear = TRUE
-	slot_foot = list(/obj/item/clothing/shoes/swat)
+	slot_foot = list(/obj/item/clothing/shoes/swat/un)
 
 /datum/job/medical/medical_doctor
 	name = "Medical Doctor"

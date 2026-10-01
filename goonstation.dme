@@ -3250,6 +3250,7 @@
 #include "modular_ticonderoga\code\obj\item\card-un.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\hats.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\masks.dm"
+#include "modular_ticonderoga\code\obj\item\clothing\shoes.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\suits.dm"
 #include "modular_ticonderoga\code\obj\item\clothing\uniforms.dm"
 #include "modular_ticonderoga\code\obj\item\gun\beretta.dm"

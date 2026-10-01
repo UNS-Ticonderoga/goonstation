@@ -2,7 +2,7 @@
 	receives_un_gear = TRUE
 	slot_jump = list(/obj/item/clothing/under/rank/un/officer)
 	slot_back = list(/obj/item/storage/backpack/security/un)
-	slot_foot = list(/obj/item/clothing/shoes/swat)
+	slot_foot = list(/obj/item/clothing/shoes/swat/un)
 
 /datum/job/security/security_officer
 	name = "Marine Guard"
