@@ -7,18 +7,13 @@
 	modularized = TRUE
 
 	icon = 'modular_ticonderoga/icons/obj/items/guns/kinetic64x32.dmi'
-	// wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/back.dmi'
-	// inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_guns.dmi'
+	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/back.dmi'
+	inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_guns.dmi'
 	icon_state = "rpk"
-	// item_state = "rpk"
-	// wear_state = "rpk"
+	item_state = "rpk"
+	wear_state = "rpk"
 	fire_animation = TRUE
 	has_empty_state = TRUE
-
-	// TODO: Placeholder.
-	wear_image_icon = 'icons/mob/clothing/back.dmi'
-	item_state = "ak47"
-	wear_state = "ak47"
 
 	two_handed = TRUE
 	force = MELEE_DMG_RIFLE

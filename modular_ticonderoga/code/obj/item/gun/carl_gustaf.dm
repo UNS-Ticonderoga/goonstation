@@ -11,17 +11,11 @@
 	// visually interesting, and I am not breaking convention by having the weapon face left. This means that inhands should be flipped from what is
 	// seen on the item icon_state. - @DisturbHerb
 	icon = 'modular_ticonderoga/icons/obj/items/guns/kinetic48x32.dmi'
-	// wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/back.dmi'
-	// inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_guns.dmi'
+	wear_image_icon = 'modular_ticonderoga/icons/mob/clothing/back.dmi'
+	inhand_image_icon = 'modular_ticonderoga/icons/mob/inhand/hand_guns.dmi'
 	icon_state = "carl_gustaf"
-	// item_state = "carl_gustaf"
-	// wear_state = "carl_gustaf"
-
-	// TODO: Placeholder.
-	inhand_image_icon = 'icons/mob/inhand/hand_guns.dmi'
-	wear_image_icon = 'icons/mob/clothing/back.dmi'
-	item_state = "rpg7"
-	wear_state = "rpg7"
+	item_state = "carl_gustaf"
+	wear_state = "carl_gustaf"
 
 	can_dual_wield = FALSE
 	two_handed = TRUE
@@ -47,6 +41,13 @@
 	src.set_current_projectile(new /datum/projectile/bullet/carl_gustaf)
 	AddComponent(/datum/component/holdertargeting/windup, 0.2 SECOND)
 	..()
+
+/obj/item/gun/kinetic/carl_gustaf/update_icon()
+	..()
+	src.item_state = "carl_gustaf[src.ammo?.amount_left < 1 ? "-empty" : ""]"
+	if (ishuman(src.loc))
+		var/mob/living/carbon/human/H = src.loc
+		H.update_inhands()
 
 /obj/item/ammo/bullets/carl_gustaf
 	sname = "84x255mm R RCL"
