@@ -52,7 +52,7 @@
 
 /obj/item/ammo/bullets/akm/rpk
 	name = "\improper RPK magazine"
-	desc = "A curved 40 round magazine, for the RPK squad automatic weapon."
+	desc = "A curved 40 round magazine made of orange bakelite plastic for the RPK squad automatic weapon."
 
 	icon = 'modular_ticonderoga/icons/obj/items/guns/ammo.dmi'
 	icon_state = "rpk"
