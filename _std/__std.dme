@@ -24,6 +24,7 @@
 #include "plane.dm"					// debug icons
 #include "text.dm"					// text macros/helpers
 // TICONDEROGA CHANGE
+#include "_modular_ticonderoga\defines\projectiles.dm"
 #include "_modular_ticonderoga\defines\rank.dm"
 // TICONDEROGA CHANGE END
 #include "defines\abilities.dm"
